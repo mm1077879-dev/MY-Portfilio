@@ -1,0 +1,1406 @@
+# MASTER PROMPT: BUILD A COMPLETE PRODUCTION-READY FULL-STACK DEVELOPER PORTFOLIO WEBSITE
+
+## 1. YOUR ROLE AND MISSION
+
+Act as a world-class Senior Full-Stack Software Architect, UI/UX Designer, React Engineer, Backend Engineer, Database Architect, Security Engineer, and DevOps Engineer.
+
+Your mission is to build a complete, professional, production-oriented Full-Stack Developer Portfolio Website with a powerful, fully functional Admin Dashboard and a dynamic Content Management System (CMS).
+
+This is NOT a simple frontend design project.
+
+You must build an actual working full-stack application with:
+- A pixel-accurate frontend inspired by the supplied reference images.
+- A properly structured Node.js and Express backend.
+- MongoDB database integration.
+- Secure admin authentication and authorization.
+- Complete CRUD functionality.
+- Dynamic content management.
+- Functional forms and API integrations.
+- Responsive layouts.
+- Production-oriented security and error handling.
+
+Do not create a static prototype, fake dashboard, or frontend-only application.
+
+## 2. REFERENCE IMAGE INSTRUCTIONS — EXTREMELY IMPORTANT
+
+I will provide six reference images.
+
+Carefully inspect every attached image and identify its corresponding page by its visual content.
+
+The reference images represent:
+
+1. Homepage Reference Image — Main public homepage.
+2. About Page Reference Image — Developer profile and biography.
+3. Services Page Reference Image — Service offerings and workflow.
+4. Projects Page Reference Image — Project portfolio and filtering.
+5. Contact Page Reference Image — Contact information, form, FAQ, and location.
+6. Admin Dashboard Reference Image — Complete administration interface.
+
+### STRICT VISUAL REQUIREMENTS
+
+**HOMEPAGE:**
+
+The homepage reference image is the primary design authority.
+
+Recreate the homepage as closely as possible, preserving:
+- Overall page composition.
+- Hero section proportions.
+- Navigation layout.
+- Typography hierarchy.
+- Profile image placement.
+- Background graphics.
+- Colors and gradients.
+- Project cards.
+- Service sections.
+- Statistics.
+- Testimonials.
+- Contact section.
+- Footer.
+- Spacing, borders, shadows, and visual effects.
+
+**OTHER PUBLIC PAGES:**
+
+Use their respective reference images as the design authority.
+
+Do not simply reuse the homepage layout for every page.
+
+Each page must have its own layout, content hierarchy, and sections, exactly following its respective reference image.
+
+**ADMIN DASHBOARD:**
+
+Recreate the supplied admin dashboard reference image as closely as possible.
+
+Maintain its:
+- Dark navy background.
+- Neon purple and blue accents.
+- Left navigation sidebar.
+- Top navigation bar.
+- Welcome banner.
+- Analytics cards.
+- Website overview chart.
+- Quick Actions.
+- Recent Messages.
+- Top Projects.
+- System Status.
+- Bottom footer.
+
+The admin dashboard must be functional, not merely decorative.
+
+### IMAGE HANDLING
+
+Use supplied reference images for visual guidance, not as flat screenshots or background replacements.
+
+Rebuild all interfaces using actual React components, CSS, layouts, icons, charts, and appropriate image assets.
+
+Do not place a screenshot of an entire reference image inside the website and pretend the design is complete.
+
+If a reference image contains visual artwork, use appropriate original or licensed assets, CSS effects, or generated illustrations.
+
+Preserve the same visual identity throughout the application.
+
+## 3. TECHNOLOGY STACK
+
+Use the following technology stack:
+
+### Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Lucide React
+- Recharts
+- React Hook Form
+- Zod
+- Axios or a properly configured Fetch API client
+- Framer Motion for appropriate animations
+
+### Backend
+- Node.js
+- Express.js
+- TypeScript
+- MongoDB
+- Mongoose
+- JWT Authentication
+- bcrypt or bcryptjs
+- Zod validation
+- Helmet
+- CORS
+- Express Rate Limit
+- Multer for file uploads
+
+### Development and Production
+- ESLint
+- Prettier
+- Environment variables
+- Centralized error handling
+- API versioning
+- Production build configuration
+- Deployment documentation
+
+Use compatible, stable package versions.
+
+Do not replace the required stack with Firebase, Supabase, PHP, Laravel, or another backend framework.
+
+## 4. PROJECT ARCHITECTURE
+
+Create a clean, scalable, maintainable monorepo structure.
+
+Suggested structure:
+
+portfolio/
+│
+├── client/
+│   ├── public/
+│   └── src/
+│       ├── assets/
+│       ├── components/
+│       ├── layouts/
+│       ├── pages/
+│       │   ├── Home/
+│       │   ├── About/
+│       │   ├── Services/
+│       │   ├── Projects/
+│       │   ├── Contact/
+│       │   └── admin/
+│       ├── hooks/
+│       ├── context/
+│       ├── services/
+│       ├── types/
+│       ├── utils/
+│       ├── validations/
+│       ├── App.tsx
+│       └── main.tsx
+│
+├── server/
+│   └── src/
+│       ├── config/
+│       ├── controllers/
+│       ├── middleware/
+│       ├── models/
+│       ├── routes/
+│       ├── services/
+│       ├── utils/
+│       ├── validations/
+│       ├── app.ts
+│       └── server.ts
+│
+├── .env.example
+├── .gitignore
+├── package.json
+└── README.md
+
+You may improve this architecture when necessary.
+
+Keep frontend and backend code properly separated.
+
+Use reusable components, typed API responses, and consistent naming conventions.
+
+## 5. GLOBAL DESIGN SYSTEM
+
+Build the entire website using this design system.
+
+### Color Palette
+
+Main background:
+#030514
+
+Secondary background:
+#070B24
+
+Card background:
+#090E2C
+
+Primary purple:
+#8B19FF
+
+Electric blue:
+#087BFF
+
+Cyan:
+#00D9FF
+
+Magenta:
+#D000FF
+
+Success green:
+#00E69A
+
+Primary text:
+#F5F5FF
+
+Secondary text:
+#B5BCD9
+
+Borders:
+Subtle purple/blue translucent borders.
+
+### Visual Style
+
+Use:
+- Premium futuristic dark UI.
+- Neon purple and blue gradients.
+- Glassmorphism.
+- Glowing borders.
+- Soft radial lighting.
+- Abstract futuristic backgrounds.
+- Smooth hover transitions.
+- Professional shadows.
+- Rounded cards.
+- Subtle animated background effects.
+
+Avoid excessive animation that negatively affects performance.
+
+### Typography
+
+Use a modern, professional sans-serif font such as Inter or Plus Jakarta Sans.
+
+Maintain a clear typography hierarchy.
+
+### Navigation
+
+Public navigation:
+- Home
+- Projects
+- Services
+- About
+- Contact
+- Admin Dashboard
+
+Add active navigation indicators and responsive mobile navigation.
+
+The navigation must work on every public page.
+
+## 6. HOMEPAGE — COMPLETE IMPLEMENTATION
+
+Recreate the homepage reference image.
+
+### Section 1: Header
+
+Include:
+- Developer logo.
+- Developer name.
+- Professional title.
+- Navigation links.
+- Admin Dashboard button.
+- Active page indicator.
+
+### Section 2: Hero
+
+Include:
+- Availability status.
+- Large headline: "Build Something Extraordinary".
+- Developer introduction.
+- Profile image on the right.
+- Primary CTA: Let's Work Together.
+- Secondary CTA: Explore My Work.
+- Technology stack information.
+- Futuristic background lighting.
+
+The profile image must be replaceable through the admin dashboard.
+
+### Section 3: Featured Projects
+
+Show three featured project cards.
+
+Each card should contain:
+- Project thumbnail.
+- Project title.
+- Category.
+- Description.
+- Feature list.
+- Live Preview button.
+- Case Study button.
+- External link.
+
+Data must come from MongoDB.
+
+### Section 4: Services Overview
+
+Include:
+- Section introduction.
+- E-commerce Development.
+- Business Websites.
+- SaaS Applications.
+- Custom Admin Dashboards.
+
+Each service should have an icon, description, and CTA.
+
+### Section 5: Why Work With Me
+
+Create feature cards highlighting:
+- Blazing Fast Performance.
+- Scalable Architecture.
+- Clean & Maintainable Code.
+- Business-Focused Development.
+
+### Section 6: Statistics
+
+Include:
+- Happy Clients.
+- Projects Delivered.
+- Client Rating.
+- Development Experience.
+
+Statistics should be configurable through the admin panel.
+
+### Section 7: Testimonials
+
+Display client testimonials with:
+- Client photograph.
+- Client name.
+- Position or company.
+- Review.
+- Rating.
+
+### Section 8: Contact CTA
+
+Include:
+- Attractive background illustration.
+- Contact heading.
+- Email button.
+- WhatsApp button.
+- Quick contact form.
+
+### Section 9: Footer
+
+Include:
+- Logo and developer information.
+- Navigation.
+- Social links.
+- Copyright.
+- Built with love message.
+
+## 7. ABOUT PAGE
+
+Recreate the About reference image.
+
+Implement the following sections:
+
+### Hero Section
+- About Me badge.
+- "Hi, I'm Mahim Dev" headline.
+- Full-Stack Developer & Problem Solver subtitle.
+- Developer biography.
+- Profile photograph.
+- Let's Work Together button.
+- Download CV button.
+- Client trust information.
+
+### Experience Statistics
+- Development Experience.
+- Projects Delivered.
+- Happy Clients.
+- Client Satisfaction.
+
+### My Journey Timeline
+
+Create an editable career timeline.
+
+Initial reference milestones:
+- 2022: Started learning web development.
+- 2023: Mastered modern frontend and backend technologies.
+- 2024: Started working on freelance and real projects.
+- 2025+: Building scalable digital products.
+
+All timeline information must be dynamically managed.
+
+### Technical Skills
+
+Include:
+- JavaScript & TypeScript.
+- Next.js & React.
+- Node.js & Express.
+- PostgreSQL.
+- MongoDB.
+
+Create editable skill cards with names, icons, proficiency levels, and categories.
+
+### Why Choose Me
+
+Include:
+- High Performance & Scalable Solutions.
+- Clean & Maintainable Code.
+- Business-Focused Development.
+- On-Time Delivery & Clear Communication.
+
+### Final CTA
+
+Create the same premium contact banner shown in the reference image.
+
+## 8. SERVICES PAGE
+
+Recreate the Services reference image.
+
+### Hero Section
+
+Headline:
+"Premium Services for Your Business"
+
+Include:
+- Service description.
+- Let's Work Together CTA.
+- Explore My Services CTA.
+- Happy Clients.
+- Projects Delivered.
+- Client Rating.
+- Futuristic laptop illustration.
+
+### Core Services
+
+Create six service cards:
+
+1. E-Commerce Development.
+2. Business Website.
+3. SaaS Applications.
+4. Custom Admin Dashboards.
+5. Performance Optimization.
+6. Ongoing Support & Maintenance.
+
+Each service must have:
+- Image or icon.
+- Title.
+- Description.
+- Features.
+- Learn More button.
+- Dynamic service detail page or detail modal.
+
+### How It Works
+
+Create four workflow steps:
+
+1. Share Your Idea.
+2. Plan & Design.
+3. Develop & Deliver.
+4. Grow Your Business.
+
+### CTA Banner
+
+Add a premium contact banner with email and WhatsApp links.
+
+Services must be editable from the admin dashboard.
+
+## 9. PROJECTS / PORTFOLIO PAGE
+
+Recreate the Projects reference image.
+
+### Hero
+
+Headline:
+"My Featured Projects"
+
+Include:
+- Portfolio description.
+- Developer technology illustrations.
+- Let's Work Together.
+- Explore More.
+
+### Project Categories
+
+Create functional category filters:
+- All Projects.
+- E-Commerce.
+- Web Apps.
+- Dashboards.
+- Business Sites.
+
+Filtering must work using actual project data.
+
+### Project Cards
+
+Each project should support:
+
+- Project thumbnail.
+- Project name.
+- Category.
+- Short description.
+- Technology stack.
+- Features.
+- Live Preview URL.
+- Case Study URL.
+- GitHub URL.
+- Featured status.
+- Publication status.
+
+### Project Detail
+
+Create a professional project detail page containing:
+- Project overview.
+- Project screenshots/gallery.
+- Technologies.
+- Challenges.
+- Solutions.
+- Features.
+- Results.
+- Live Demo.
+- Source Code.
+
+### Additional Sections
+
+Include:
+- More Projects CTA.
+- Contact banner.
+- Footer.
+
+Implement search, pagination or Load More, and category filtering.
+
+## 10. CONTACT PAGE
+
+Recreate the Contact reference image.
+
+### Hero
+
+Headline:
+"Contact Me"
+
+Subtitle:
+"Let's Turn Your Idea Into Reality"
+
+Include:
+- Email Me button.
+- WhatsApp button.
+- Professional support illustrations.
+- World map visual.
+
+### Contact Information
+
+Create four information cards:
+
+1. Email Address.
+2. WhatsApp.
+3. Location.
+4. Working Hours.
+
+These values must be editable from admin settings.
+
+### Contact Form
+
+Create a fully functional form:
+
+Fields:
+- Full Name.
+- Email.
+- Select Service.
+- Subject.
+- Message.
+
+Requirements:
+- Required-field validation.
+- Email validation.
+- Backend submission.
+- Loading state.
+- Success notification.
+- Error notification.
+- Spam protection.
+- Rate limiting.
+- Save every valid submission in MongoDB.
+
+After submission, show a professional confirmation message.
+
+### Social Media
+
+Create configurable links for:
+- GitHub.
+- LinkedIn.
+- YouTube.
+- X.
+- Discord.
+
+### FAQ
+
+Implement expandable accordion items.
+
+Initial questions:
+- How long does it take to complete a project?
+- Do you provide ongoing support?
+- What is your pricing model?
+- Can we work together remotely?
+
+FAQ content must be manageable from admin.
+
+### Location Map
+
+Show an appropriate location map using a configurable map embed or map provider.
+
+Do not fabricate an exact street address.
+
+### Final CTA
+
+Add a premium "Ready to Start Your Project?" banner.
+
+## 11. ADMIN DASHBOARD — COMPLETE CMS
+
+This is one of the most important parts of the project.
+
+Recreate the supplied Admin Dashboard reference image.
+
+The dashboard must have a separate protected layout.
+
+### Admin Authentication
+
+Implement:
+- Admin login.
+- Logout.
+- Secure password hashing.
+- JWT-based authentication.
+- Protected routes.
+- Role-based authorization.
+- Token expiration.
+- Secure authentication cookie strategy.
+- Login rate limiting.
+
+Never expose passwords or JWT secrets in frontend code.
+
+Provide a secure way to create the initial admin account.
+
+Do not create publicly accessible admin registration.
+
+### Dashboard Overview
+
+Create these analytics cards:
+
+1. Total Projects.
+2. Total Messages.
+3. Total Visitors.
+4. Client Rating.
+
+Create:
+- Website Overview chart.
+- Visitors analytics.
+- Projects analytics.
+- Messages analytics.
+- Date range filtering.
+- Recent Messages.
+- Top Projects.
+- System Status.
+- Quick Actions.
+
+Analytics must use real available database data.
+
+Do not display fabricated live metrics as actual analytics.
+
+### Sidebar Navigation
+
+Implement these menu items:
+
+**Dashboard**
+- Dashboard Overview.
+
+**Website Control**
+- Update Banner.
+- Manage Projects.
+- Manage Services.
+- Manage About.
+- Manage Testimonials.
+- Manage Skills.
+- Manage Pricing.
+- Manage FAQ.
+
+**Communication**
+- Messages.
+- Contact Inquiries.
+
+**Settings**
+- Site Settings.
+- SEO Settings.
+- Social Links.
+- Analytics.
+
+### A. Update Banner
+
+Admin can:
+- Update homepage headline.
+- Update subtitle.
+- Update profile image.
+- Change background artwork.
+- Change CTA labels.
+- Change CTA links.
+- Toggle visibility.
+- Save changes.
+
+### B. Manage Projects
+
+Full CRUD:
+- Create project.
+- Edit project.
+- Delete project.
+- Upload project images.
+- Add multiple screenshots.
+- Select category.
+- Add technologies.
+- Add project features.
+- Add live URL.
+- Add GitHub URL.
+- Add case study.
+- Mark as featured.
+- Publish/unpublish.
+- Reorder projects.
+
+Add confirmation before deletion.
+
+### C. Manage Services
+
+Full CRUD:
+- Create service.
+- Update service.
+- Delete service.
+- Upload service image.
+- Manage icon.
+- Edit description.
+- Manage features.
+- Manage pricing.
+- Control visibility.
+
+### D. Manage About
+
+Admin can manage:
+- Developer name.
+- Biography.
+- Profile image.
+- Professional title.
+- Experience.
+- Career timeline.
+- Statistics.
+- CV file.
+- Why Choose Me content.
+
+### E. Manage Testimonials
+
+Full CRUD:
+- Client name.
+- Client image.
+- Company.
+- Position.
+- Review.
+- Rating.
+- Featured status.
+- Publication status.
+
+### F. Manage Skills
+
+Full CRUD:
+- Skill name.
+- Category.
+- Icon.
+- Proficiency level.
+- Display order.
+- Visibility.
+
+### G. Manage Pricing
+
+Full CRUD:
+- Package name.
+- Price.
+- Billing type.
+- Features.
+- Featured package.
+- CTA.
+- Visibility.
+
+### H. Manage FAQ
+
+Full CRUD:
+- Question.
+- Answer.
+- Category.
+- Display order.
+- Visibility.
+
+### I. Messages and Contact Inquiries
+
+Create a professional inbox.
+
+Features:
+- View all messages.
+- Search messages.
+- Filter by status.
+- View message details.
+- Mark as read.
+- Mark as unread.
+- Reply through configured email integration, if available.
+- Archive messages.
+- Delete messages.
+- Track submission date.
+- Unread message counters.
+
+Message statuses:
+- New.
+- Read.
+- Replied.
+- Archived.
+
+Do not pretend an email was sent if no email service is configured.
+
+### J. Site Settings
+
+Manage:
+- Website title.
+- Logo.
+- Favicon.
+- Developer name.
+- Email.
+- Phone.
+- WhatsApp.
+- Location.
+- Working hours.
+- Footer content.
+- Copyright.
+- Default language.
+
+### K. SEO Settings
+
+Manage:
+- Meta title.
+- Meta description.
+- Keywords.
+- Open Graph image.
+- Social sharing metadata.
+- Canonical URL.
+- Robots settings.
+
+Implement dynamic SEO metadata for public pages.
+
+### L. Social Links
+
+Admin can add, edit, delete, and reorder social links.
+
+### M. Analytics
+
+Implement real analytics collection where possible.
+
+Track:
+- Page views.
+- Unique visitors using privacy-conscious identifiers.
+- Popular pages.
+- Referrer sources.
+- Project visits.
+
+Use an appropriate data retention strategy.
+
+### N. Admin Profile and Settings
+
+Include:
+- Admin profile.
+- Change password.
+- Account settings.
+- Logout.
+- Security settings.
+
+## 12. MONGODB DATABASE DESIGN
+
+Create properly structured Mongoose models.
+
+Required collections:
+
+1. Admin
+2. Project
+3. Service
+4. Testimonial
+5. Skill
+6. Message
+7. FAQ
+8. Pricing
+9. SiteSettings
+10. Analytics
+11. Timeline
+
+Each model must include appropriate:
+- Schema definitions.
+- Required fields.
+- Validation.
+- Timestamps.
+- Indexes.
+- Relationships where necessary.
+
+Use ObjectId references where appropriate.
+
+Avoid storing everything in one large MongoDB document.
+
+Implement pagination for large collections.
+
+Add indexes for frequently searched and filtered fields.
+
+## 13. REST API DEVELOPMENT
+
+Build versioned REST APIs under:
+
+/api/v1/
+
+### Authentication
+POST /api/v1/auth/login
+POST /api/v1/auth/logout
+GET /api/v1/auth/me
+PUT /api/v1/auth/change-password
+
+### Projects
+GET /api/v1/projects
+GET /api/v1/projects/:id
+POST /api/v1/projects
+PUT /api/v1/projects/:id
+DELETE /api/v1/projects/:id
+
+### Services
+GET /api/v1/services
+GET /api/v1/services/:id
+POST /api/v1/services
+PUT /api/v1/services/:id
+DELETE /api/v1/services/:id
+
+### About
+GET /api/v1/about
+PUT /api/v1/about
+
+### Testimonials
+GET /api/v1/testimonials
+POST /api/v1/testimonials
+PUT /api/v1/testimonials/:id
+DELETE /api/v1/testimonials/:id
+
+### Skills
+GET /api/v1/skills
+POST /api/v1/skills
+PUT /api/v1/skills/:id
+DELETE /api/v1/skills/:id
+
+### Messages
+POST /api/v1/messages
+GET /api/v1/messages
+GET /api/v1/messages/:id
+PUT /api/v1/messages/:id
+DELETE /api/v1/messages/:id
+
+### FAQ
+GET /api/v1/faq
+POST /api/v1/faq
+PUT /api/v1/faq/:id
+DELETE /api/v1/faq/:id
+
+### Pricing
+GET /api/v1/pricing
+POST /api/v1/pricing
+PUT /api/v1/pricing/:id
+DELETE /api/v1/pricing/:id
+
+### Settings
+GET /api/v1/settings
+PUT /api/v1/settings
+
+### Analytics
+GET /api/v1/analytics/overview
+GET /api/v1/analytics/visitors
+GET /api/v1/analytics/pages
+
+### Upload
+POST /api/v1/upload
+DELETE /api/v1/upload/:id
+
+Implement appropriate authentication and authorization middleware on protected endpoints.
+
+Public endpoints must expose only published content.
+
+Use consistent JSON response formats and appropriate HTTP status codes.
+
+## 14. IMAGE AND FILE UPLOAD SYSTEM
+
+Implement a secure media upload system.
+
+Support:
+- JPG.
+- JPEG.
+- PNG.
+- WEBP.
+- PDF for CV documents.
+
+Requirements:
+- File type validation.
+- File size limits.
+- Secure filename generation.
+- Upload error handling.
+- Image preview.
+- Replace image.
+- Delete image.
+- Store file metadata.
+- Store asset URLs in MongoDB.
+
+Use Cloudinary or another configurable cloud storage provider for production.
+
+Local uploads may be used during development.
+
+Do not store large binary image files directly inside MongoDB documents.
+
+## 15. FRONTEND-BACKEND INTEGRATION
+
+All public content must load dynamically from the backend.
+
+Examples:
+
+- Homepage projects come from the Project collection.
+- Homepage services come from the Service collection.
+- About page comes from About and Timeline data.
+- Skills come from Skill.
+- Testimonials come from Testimonial.
+- Contact details come from SiteSettings.
+- FAQs come from FAQ.
+- Messages are saved in MongoDB.
+
+When the admin updates website content, the public website must reflect those changes without requiring source-code modifications.
+
+Implement:
+- API loading states.
+- Error states.
+- Empty states.
+- Success notifications.
+- Form validation.
+- Proper data refresh.
+- Optimistic updates where appropriate.
+
+Never use hardcoded frontend arrays as the permanent data source for dynamic content.
+
+Use seed data only for initial development and demonstration.
+
+## 16. SECURITY REQUIREMENTS
+
+Implement real security practices:
+
+- Password hashing.
+- JWT verification.
+- Role-based access.
+- Input validation.
+- Request sanitization.
+- Rate limiting.
+- Secure HTTP headers.
+- CORS configuration.
+- Environment variable protection.
+- MongoDB injection protection.
+- File upload validation.
+- Authentication cookie security.
+- Login brute-force protection.
+- Proper authorization on every admin endpoint.
+- Centralized error handling.
+
+Never expose:
+- Database credentials.
+- JWT secrets.
+- API secrets.
+- Private environment variables.
+
+Never trust frontend-only authorization.
+
+The backend must independently verify every protected operation.
+
+## 17. RESPONSIVE DESIGN
+
+The complete website must work across:
+
+- Large desktop.
+- Standard desktop.
+- Laptop.
+- Tablet.
+- Mobile devices.
+
+### Public Website
+
+On mobile:
+- Responsive navigation.
+- Properly stacked hero sections.
+- Single-column cards where appropriate.
+- Readable typography.
+- Proper image scaling.
+- No horizontal overflow.
+- Touch-friendly buttons.
+
+### Admin Dashboard
+
+On desktop:
+- Persistent sidebar.
+- Full analytics layout.
+
+On tablet:
+- Collapsible sidebar.
+
+On mobile:
+- Mobile navigation drawer.
+- Responsive analytics cards.
+- Scrollable or adaptive charts.
+- Mobile-friendly tables.
+- Properly stacked forms.
+
+Never sacrifice functionality on smaller screens.
+
+## 18. ANIMATIONS AND INTERACTIONS
+
+Implement:
+- Smooth page transitions.
+- Hover glow effects.
+- Button animations.
+- Card hover transformations.
+- Scroll reveal animations.
+- Animated gradients.
+- Subtle background particles or lighting.
+- Interactive charts.
+- FAQ accordion.
+- Project category filtering.
+- Mobile menu animation.
+
+Respect prefers-reduced-motion.
+
+Animations must remain smooth and lightweight.
+
+## 19. PERFORMANCE AND SEO
+
+Implement:
+- Lazy loading.
+- Optimized images.
+- Code splitting.
+- Route-based lazy loading.
+- Efficient API requests.
+- Database pagination.
+- Proper caching where appropriate.
+- Semantic HTML.
+- Accessible components.
+- Keyboard navigation.
+- Descriptive alt text.
+- Dynamic page titles.
+- Meta descriptions.
+- Open Graph tags.
+- Sitemap.
+- Robots.txt.
+
+Aim for strong Lighthouse performance and accessibility scores.
+
+## 20. TESTING AND QUALITY ASSURANCE
+
+Do not consider the project complete until the main workflows have been tested.
+
+Test:
+
+### Public Website
+- Every route loads.
+- Navigation works.
+- Projects load dynamically.
+- Category filters work.
+- Service content loads.
+- Contact form submits.
+- FAQ works.
+- Social links work.
+- Mobile layout works.
+
+### Admin
+- Login works.
+- Unauthorized users cannot access admin routes.
+- Dashboard statistics load.
+- Project CRUD works.
+- Service CRUD works.
+- About content updates.
+- Skills CRUD works.
+- Testimonials CRUD works.
+- FAQ CRUD works.
+- Messages are stored and manageable.
+- Image uploads work.
+- Settings update the public website.
+
+### Backend
+- API validation works.
+- Database connection works.
+- Authentication works.
+- Error handling works.
+- Protected routes work.
+- File uploads are validated.
+
+Write meaningful tests for important business logic and API workflows.
+
+Fix all critical errors before completion.
+
+## 21. INITIAL SEED DATA
+
+Create a development seed script.
+
+Include editable example data based on the supplied references:
+
+Projects:
+- NextGen Mart.
+- TaskFlow Pro.
+- BizGrow.
+
+Services:
+- E-Commerce Development.
+- Business Website.
+- SaaS Applications.
+- Custom Admin Dashboards.
+- Performance Optimization.
+- Ongoing Support & Maintenance.
+
+Add example skills, FAQs, testimonials, timeline entries, and site settings.
+
+Important:
+All sample contact details, statistics, testimonials, and business information must be editable.
+
+Clearly treat demonstration content as sample content. Do not invent genuine clients, achievements, or real analytics.
+
+## 22. ENVIRONMENT CONFIGURATION
+
+Create a complete .env.example.
+
+Include variables such as:
+
+NODE_ENV=
+PORT=
+CLIENT_URL=
+MONGODB_URI=
+JWT_SECRET=
+JWT_EXPIRES_IN=
+COOKIE_SECRET=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+EMAIL_SERVICE_HOST=
+EMAIL_SERVICE_PORT=
+EMAIL_SERVICE_USER=
+EMAIL_SERVICE_PASSWORD=
+
+Never commit actual secrets.
+
+Document how to configure each required service.
+
+The application must clearly report missing required configuration instead of silently pretending an integration works.
+
+## 23. DEPLOYMENT AND DOCUMENTATION
+
+Provide:
+
+- Complete README.md.
+- Installation instructions.
+- Frontend setup.
+- Backend setup.
+- MongoDB configuration.
+- Environment configuration.
+- Seed database instructions.
+- Admin creation instructions.
+- Development commands.
+- Production build commands.
+- Deployment instructions.
+- API documentation.
+- Troubleshooting guide.
+
+Prepare the frontend and backend for deployment on suitable hosting platforms.
+
+Support MongoDB Atlas for production database hosting.
+
+## 24. STRICT DEVELOPMENT RULES
+
+These requirements are mandatory.
+
+1. Do not build only a frontend.
+2. Do not create a fake backend.
+3. Do not use localStorage as a replacement for MongoDB.
+4. Do not create non-functional buttons.
+5. Do not create placeholder links for important functionality.
+6. Do not hardcode dynamic website content.
+7. Do not leave CRUD buttons without implementations.
+8. Do not expose admin routes without backend authentication.
+9. Do not ignore the supplied reference images.
+10. Do not use generic templates that differ significantly from the references.
+11. Do not simplify the admin dashboard into a basic table.
+12. Do not leave TODO comments for core functionality.
+13. Do not claim that a feature works unless it has actually been implemented.
+14. Do not invent successful email delivery, analytics, or external integrations.
+15. Maintain clean, reusable, production-oriented code.
+
+If any third-party service requires credentials, implement its integration properly and document the required configuration.
+
+## 25. DEVELOPMENT EXECUTION STRATEGY
+
+Work in the following phases:
+
+PHASE 1 — Analyze the reference images and define the complete design system.
+
+PHASE 2 — Create the project structure and install dependencies.
+
+PHASE 3 — Build the reusable UI components and public layouts.
+
+PHASE 4 — Implement all five public pages according to their individual reference images.
+
+PHASE 5 — Build the complete responsive Admin Dashboard.
+
+PHASE 6 — Implement MongoDB models and database connection.
+
+PHASE 7 — Build the Express REST APIs and authentication.
+
+PHASE 8 — Connect all frontend features to the backend.
+
+PHASE 9 — Implement image uploads, settings, analytics, and CMS functionality.
+
+PHASE 10 — Test all important workflows, fix bugs, and optimize performance.
+
+PHASE 11 — Prepare production build and deployment documentation.
+
+Do not skip phases.
+
+## 26. GOOGLE AI STUDIO OUTPUT INSTRUCTIONS
+
+You are expected to implement the actual application, not merely explain how to build it.
+
+Start by examining the reference images.
+
+Then inspect the existing workspace and its files before making changes.
+
+If an existing project is present, preserve useful existing functionality and integrate your implementation carefully.
+
+Create and modify the necessary source files.
+
+Do not stop after generating a homepage or a visual mockup.
+
+Implement the complete application with working frontend, backend, database models, routes, and admin functionality.
+
+If the output becomes too large for one generation, work in clearly defined phases while preserving the project architecture and existing code.
+
+Maintain a checklist of completed and remaining features.
+
+After each phase:
+- Check for TypeScript errors.
+- Check imports and dependencies.
+- Check route integration.
+- Check API connectivity.
+- Fix broken functionality before proceeding.
+
+At the end, provide:
+1. Complete project structure.
+2. Implemented feature checklist.
+3. Installation commands.
+4. Environment configuration guide.
+5. MongoDB setup instructions.
+6. Admin account creation instructions.
+7. Development and production run commands.
+8. Remaining external configuration requirements, if any.
+
+## 27. FINAL ACCEPTANCE CRITERIA
+
+The project will be considered complete only when:
+
+- The homepage closely matches the homepage reference image.
+- About, Services, Projects, and Contact pages follow their respective reference images.
+- The Admin Dashboard closely matches its reference image.
+- Every public page is responsive.
+- Every dynamic section is connected to MongoDB.
+- Admin authentication works securely.
+- Admin CRUD operations work.
+- Contact inquiries are stored in the database.
+- Image uploads work.
+- Changes in the admin dashboard update the public website.
+- No important buttons or navigation links are non-functional.
+- The application builds successfully.
+- Setup and deployment documentation is complete.
+
+**FINAL DIRECTIVE:**
+
+Build this as a premium, visually impressive, fully functional, database-driven, production-oriented Full-Stack Developer Portfolio Website.
+
+Prioritize visual fidelity to the six supplied reference images while maintaining excellent code quality, security, scalability, accessibility, and performance.
+
+Do not compromise the design.
+
+Do not compromise the backend.
+
+Do not compromise functionality.
+
+Deliver a complete working application, not a demonstration.

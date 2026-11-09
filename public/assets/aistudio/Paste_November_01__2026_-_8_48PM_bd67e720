@@ -1,0 +1,1009 @@
+# MASTER PROMPT: COMPLETE PROJECT AUDIT, TESTING, BUG FIXING & PRODUCTION-LEVEL OPTIMIZATION
+
+## ROLE & RESPONSIBILITY
+
+Act as a Senior Full-Stack Software Engineer, Software Architect, QA Automation Engineer, Database Engineer, Security Engineer, and DevOps Engineer.
+
+Your mission is to thoroughly inspect, understand, test, debug, validate, and optimize my **EXISTING PROJECT** to bring it to a stable, secure, reliable, and production-ready condition.
+
+This project has already been developed.
+
+**You are NOT being asked to create a new project, redesign the existing application, replace its architecture, or introduce unnecessary features.**
+
+Your responsibility is to understand the existing codebase and improve what is already there without breaking anything.
+
+---
+
+# 1. ABSOLUTE RULES — MUST FOLLOW
+
+These rules are mandatory throughout the entire task.
+
+### Rule 1: Preserve the Existing Design
+
+DO NOT change:
+
+- Existing UI/UX design.
+- Layout, structure, spacing, or alignment.
+- Colors, fonts, typography, or themes.
+- Buttons, cards, tables, forms, and navigation styles.
+- Existing animations and transitions.
+- Header, footer, sidebar, navbar, or dashboard design.
+- Existing responsive layouts.
+- Existing images, icons, and visual assets.
+
+Do not redesign or modernize the interface.
+
+Do not replace existing components just because you prefer another design.
+
+Only make the smallest necessary UI changes when an existing bug makes the application unusable. Even then, preserve the original visual appearance.
+
+### Rule 2: Do Not Rebuild the Project
+
+- Do not create a new project.
+- Do not replace the existing framework.
+- Do not rewrite the complete codebase.
+- Do not replace working components unnecessarily.
+- Do not remove existing features.
+- Do not change established application architecture without a proven technical necessity.
+- Do not introduce unnecessary dependencies.
+- Do not upgrade packages without checking compatibility and necessity.
+
+Work with the existing technology stack, architecture, coding conventions, and project structure.
+
+### Rule 3: Protect Existing Data and Functionality
+
+- Never delete existing user data.
+- Never overwrite production data with test data.
+- Never execute destructive database commands on production.
+- Never remove existing database tables or columns without a verified migration plan.
+- Never expose API keys, passwords, secrets, or environment variables.
+- Never disable security features just to make tests pass.
+- Never fake successful operations.
+- Never hide or ignore errors.
+
+Before editing files, inspect the Git status and existing changes. Preserve all user-created or uncommitted work.
+
+### Rule 4: Fix Problems, Not Just Symptoms
+
+Identify the actual root cause of each problem.
+
+Implement the smallest safe and maintainable fix.
+
+After fixing an issue, test the affected functionality and check for regressions elsewhere.
+
+### Rule 5: Never Claim an Untested Feature Works
+
+Only mark a feature as working after successfully testing it.
+
+If a feature cannot be tested because of missing credentials, unavailable services, or environment limitations, clearly report it as BLOCKED or NOT VERIFIED.
+
+Do not fabricate test results.
+
+---
+
+# 2. PHASE ONE — COMPLETE PROJECT DISCOVERY
+
+Before changing any code, read and understand the entire available project.
+
+Inspect:
+
+- Complete folder and file structure.
+- package.json and installed dependencies.
+- Framework and technology stack.
+- Application entry points.
+- Frontend architecture.
+- Backend architecture.
+- API routes and endpoints.
+- Database configuration.
+- Database schema and relationships.
+- Authentication and authorization.
+- Admin panel.
+- User dashboard.
+- State management.
+- Routing and navigation.
+- Environment configuration.
+- Existing testing infrastructure.
+- Build and deployment configuration.
+- Third-party integrations.
+- Existing documentation.
+
+Read relevant source files instead of assuming how the application works.
+
+Build an internal understanding of:
+
+1. How the application starts.
+2. How users navigate through it.
+3. How frontend components communicate.
+4. How API requests are processed.
+5. How data moves between frontend, backend, and database.
+6. How authentication and permissions work.
+7. How admin operations are executed.
+8. How information is stored and retrieved.
+9. Which components depend on other components.
+
+Create a complete internal project architecture map.
+
+Do not start making major changes until you understand the existing implementation.
+
+---
+
+# 3. PHASE TWO — COMPLETE FEATURE INVENTORY
+
+Identify every existing page, feature, module, and functional component.
+
+Inspect the entire application, including:
+
+### Frontend
+
+- Homepage.
+- Product pages.
+- Category pages.
+- Search functionality.
+- Product details.
+- Shopping cart.
+- Checkout.
+- Order success page.
+- User account.
+- Order history.
+- Wishlist.
+- Contact forms.
+- Navigation.
+- Footer.
+- Other existing pages and components.
+
+### Admin Panel
+
+Inspect every existing admin module, including:
+
+- Admin dashboard.
+- Analytics and statistics.
+- Product management.
+- Category management.
+- Order management.
+- Customer management.
+- User management.
+- Wishlist management, if available.
+- Inventory management.
+- Banner and content management.
+- Settings.
+- Admin profile.
+- Role and permission management.
+- Other existing admin features.
+
+This is an illustrative checklist. Test the actual modules present in the project.
+
+Do not create missing features simply because they appear in this checklist.
+
+Produce a complete list of existing features and their dependencies.
+
+---
+
+# 4. PHASE THREE — COMPLETE FUNCTIONALITY AUDIT
+
+Test every existing feature individually.
+
+Verify the following:
+
+- Does the page load correctly?
+- Does the component render correctly?
+- Does the button perform its intended action?
+- Does the form accept valid input?
+- Does the form reject invalid input?
+- Does navigation work?
+- Do filters work?
+- Does search return correct results?
+- Does sorting work?
+- Does pagination work?
+- Does data load correctly?
+- Does data update correctly?
+- Does the application display loading states?
+- Are empty states handled correctly?
+- Are API failures handled correctly?
+- Are validation errors displayed properly?
+- Are success messages accurate?
+- Does the interface remain stable after refresh?
+- Does the application handle unexpected errors?
+
+Inspect every interactive element.
+
+A button must not be considered functional merely because it is visible or clickable.
+
+Verify its complete expected behavior.
+
+---
+
+# 5. PHASE FOUR — DATABASE & DATA PERSISTENCE AUDIT
+
+This is one of the most important parts of the task.
+
+Understand the existing database technology and schema before making changes.
+
+Inspect:
+
+- Database connection.
+- Table structures.
+- Column types.
+- Primary keys.
+- Foreign keys.
+- Relationships.
+- Indexes.
+- Constraints.
+- Unique fields.
+- Required fields.
+- Default values.
+- Database migrations.
+- ORM models, if applicable.
+- Data validation.
+- Transaction handling.
+- Error handling.
+
+### Verify Real Data Persistence
+
+Test whether the application actually saves data to the configured database.
+
+Verify:
+
+1. Create a record.
+2. Read the saved record.
+3. Update the record.
+4. Read the updated record again.
+5. Delete the record in an isolated test environment.
+6. Confirm the expected final database state.
+7. Refresh the page and confirm persistence.
+8. Restart the application and verify persistence again, where the environment permits.
+
+Check whether data is accidentally stored only in:
+
+- Local component state.
+- Browser memory.
+- Temporary arrays.
+- Static JSON files.
+- Hardcoded mock data.
+- Local storage when the intended source of truth is the database.
+
+Do not assume that displaying new data means it has been saved.
+
+### Database Safety
+
+- Do not drop existing tables.
+- Do not destroy existing records.
+- Do not run unverified migrations.
+- Use safe, backward-compatible migrations whenever possible.
+- Verify database constraints and relationships.
+- Prevent duplicate records where uniqueness is required.
+- Use transactions for related multi-step operations where necessary.
+- Prevent orphaned records.
+- Handle database failures gracefully.
+
+If schema changes are necessary, explain the exact reason and migration impact before applying them.
+
+Use an isolated test database for destructive testing.
+
+Never perform destructive CRUD tests against production data.
+
+---
+
+# 6. PHASE FIVE — COMPLETE CRUD TESTING
+
+Test all existing CRUD operations in the application.
+
+CRUD means:
+
+- CREATE
+- READ
+- UPDATE
+- DELETE
+
+Pay special attention to the Admin Panel.
+
+For every existing manageable resource, verify the following:
+
+### CREATE
+
+- Can an authorized admin create a new record?
+- Are required fields validated?
+- Are incorrect values rejected?
+- Are duplicate entries handled correctly?
+- Is the new record actually saved in the database?
+- Does the new record appear in the correct list?
+
+### READ
+
+- Can the application retrieve records correctly?
+- Are details accurate?
+- Are relationships populated correctly?
+- Are search, filter, sorting, and pagination functional?
+- Are empty results handled correctly?
+
+### UPDATE
+
+- Can an authorized admin edit an existing record?
+- Are updated values validated?
+- Are changes saved to the database?
+- Does the updated information appear correctly after refresh?
+- Are unrelated records unaffected?
+
+### DELETE
+
+- Can an authorized admin delete the intended record?
+- Is the correct record deleted?
+- Are related records handled safely?
+- Are foreign-key constraints respected?
+- Are unauthorized users prevented from deleting records?
+- Does the application handle unsuccessful deletion correctly?
+
+Test every existing CRUD module separately.
+
+Do not test deletion against real customer, order, or production data.
+
+Use temporary test records in an isolated testing environment.
+
+### Important Persistence Requirement
+
+For each tested operation, verify the actual database state.
+
+Do not use mocked CRUD responses to claim that database persistence works.
+
+---
+
+# 7. PHASE SIX — ADMIN PANEL COMPLETE AUDIT
+
+Perform a dedicated and comprehensive audit of the existing Admin Panel.
+
+Verify:
+
+- Admin login.
+- Admin logout.
+- Authentication persistence.
+- Session expiration.
+- Admin-only route protection.
+- Role-based permissions.
+- Dashboard statistics.
+- Data loading.
+- Data filtering.
+- Search functionality.
+- Pagination.
+- Table rendering.
+- Create operations.
+- Update operations.
+- Delete operations.
+- Form validation.
+- Image and file uploads, if implemented.
+- Error messages.
+- Success messages.
+- Loading indicators.
+- Empty states.
+- Responsive behavior.
+
+### Admin Table Testing
+
+For every existing data table, verify:
+
+- Correct column names.
+- Correct row data.
+- Correct record counts.
+- Accurate pagination.
+- Correct sorting.
+- Correct filtering.
+- Search accuracy.
+- Action buttons.
+- Edit functionality.
+- Delete functionality.
+- Data refresh after an operation.
+- No duplicate records caused by incorrect API behavior.
+
+Verify that table data is coming from the correct data source.
+
+### Dashboard Statistics
+
+Check whether dashboard numbers are calculated using actual database records.
+
+Verify counts, totals, order statistics, revenue calculations, and other existing metrics.
+
+Do not replace real calculations with hardcoded values.
+
+Do not fabricate dashboard statistics.
+
+---
+
+# 8. PHASE SEVEN — MOCKING & TEST ENVIRONMENT
+
+Use a proper testing strategy.
+
+IMPORTANT: Mock external dependencies when appropriate, but do not mock away the functionality that must be verified.
+
+### What Should Be Mocked
+
+Mock external or expensive services in controlled test environments when necessary, such as:
+
+- Payment gateway.
+- Email service.
+- SMS provider.
+- External APIs.
+- Third-party shipping providers.
+- Cloud storage services.
+- Other external integrations.
+
+Use safe test credentials or provider sandbox modes when available.
+
+### What Must Be Tested for Real
+
+The following functionality must be verified against the actual application logic and an isolated test database:
+
+- CRUD operations.
+- Database writes.
+- Database reads.
+- Updates.
+- Deletes.
+- Database relationships.
+- Data validation.
+- Authentication logic.
+- Authorization rules.
+- API integration within the application.
+- Data persistence.
+
+Use real integration tests against a dedicated test database when possible.
+
+Do not pretend an in-memory mock proves real database persistence.
+
+### Test Data Rules
+
+- Generate temporary test accounts.
+- Generate temporary products and categories.
+- Generate temporary orders.
+- Use clearly identifiable test records.
+- Clean up only the test records created by your test suite.
+- Never delete user-owned or production data.
+
+---
+
+# 9. PHASE EIGHT — API & BACKEND AUDIT
+
+Inspect every existing API endpoint.
+
+Verify:
+
+- HTTP methods.
+- Request parameters.
+- Request body validation.
+- Response structure.
+- Correct HTTP status codes.
+- Authentication.
+- Authorization.
+- Error handling.
+- Database interactions.
+- Input sanitization.
+- Duplicate request handling.
+- Pagination.
+- Filtering.
+- Sorting.
+- Rate limiting where appropriate.
+
+Test for:
+
+- 400 Bad Request.
+- 401 Unauthorized.
+- 403 Forbidden.
+- 404 Not Found.
+- 409 Conflict.
+- 422 Validation Error, where applicable.
+- 500 Internal Server Error.
+
+Check for:
+
+- Broken endpoints.
+- Incorrect endpoint URLs.
+- Missing API handlers.
+- Invalid request payloads.
+- Incorrect response data.
+- Unhandled exceptions.
+- Inconsistent response formats.
+- N+1 database queries.
+- Missing authorization checks.
+- Unnecessary database requests.
+
+Preserve all existing API contracts unless a verified bug requires a backward-compatible correction.
+
+---
+
+# 10. PHASE NINE — AUTHENTICATION & AUTHORIZATION SECURITY
+
+Audit the complete authentication system.
+
+Verify:
+
+- User registration.
+- Login.
+- Logout.
+- Password validation.
+- Password hashing.
+- Session management.
+- Token validation.
+- Token expiration.
+- Password reset, if implemented.
+- Protected routes.
+- Admin-only routes.
+- Role-based access control.
+- Permission checks.
+
+Test these scenarios:
+
+1. Logged-out users cannot access protected resources.
+2. Normal users cannot access admin-only functions.
+3. Users cannot modify another user's private data.
+4. Unauthorized users cannot create, update, or delete restricted records.
+5. Invalid tokens are rejected.
+6. Expired sessions are handled correctly.
+7. Sensitive information is not exposed in API responses.
+
+Perform permission checks on the backend, not only in the frontend.
+
+Do not remove or weaken existing authentication security.
+
+---
+
+# 11. PHASE TEN — SECURITY AUDIT
+
+Inspect the application for common security vulnerabilities.
+
+Check for:
+
+- SQL injection.
+- Cross-Site Scripting (XSS).
+- Cross-Site Request Forgery (CSRF), where applicable.
+- Insecure Direct Object References (IDOR).
+- Broken access control.
+- Authentication weaknesses.
+- Insecure file uploads.
+- Exposed environment variables.
+- Exposed API keys.
+- Sensitive information in logs.
+- Unsafe dependency versions.
+- Weak input validation.
+- Insecure security headers.
+- Improper CORS configuration.
+- Unprotected administrative endpoints.
+
+Review dependencies for known security issues using available tooling.
+
+Fix verified vulnerabilities without unnecessarily changing the existing architecture.
+
+Never expose secrets in frontend code or public responses.
+
+---
+
+# 12. PHASE ELEVEN — FRONTEND & USER EXPERIENCE TESTING
+
+Preserve the original visual appearance.
+
+Test the existing interface at:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Verify:
+
+- No broken layouts.
+- No horizontal overflow.
+- No overlapping elements.
+- No missing images.
+- No broken icons.
+- No broken links.
+- No console errors.
+- No hydration errors, where applicable.
+- No unnecessary loading loops.
+- No frozen buttons.
+- No broken forms.
+- No unexpected page reloads.
+- No incorrect navigation.
+
+Check loading, error, success, and empty states.
+
+Do not introduce a new design system or replace existing components.
+
+---
+
+# 13. PHASE TWELVE — PERFORMANCE AUDIT
+
+Optimize only where measurable problems exist.
+
+Inspect:
+
+- Page loading time.
+- API response time.
+- Database query performance.
+- Unnecessary component re-renders.
+- Memory leaks.
+- Large dependencies.
+- Duplicate API calls.
+- Image optimization.
+- Lazy loading.
+- Caching.
+- Bundle size.
+- Rendering performance.
+
+Improve performance while preserving existing functionality and visual appearance.
+
+Do not apply risky optimizations without testing their effects.
+
+Do not sacrifice correctness or security for small performance improvements.
+
+---
+
+# 14. PHASE THIRTEEN — ERROR & EDGE CASE TESTING
+
+Test realistic failure scenarios.
+
+Examples:
+
+- Empty form submission.
+- Invalid email.
+- Invalid input values.
+- Missing required fields.
+- Duplicate records.
+- Invalid record ID.
+- Deleted record access.
+- Network failure.
+- API timeout.
+- Database unavailable.
+- Unauthorized request.
+- Expired session.
+- Image upload failure.
+- Empty database.
+- Very large data lists.
+- Missing images.
+- Unexpected server response.
+
+The application should fail gracefully.
+
+Display appropriate error messages without exposing technical secrets.
+
+Ensure that one failed operation does not break unrelated features.
+
+---
+
+# 15. PHASE FOURTEEN — AUTOMATED TESTING
+
+Use the testing tools already available in the project.
+
+Inspect the existing setup before adding new testing dependencies.
+
+Run appropriate tests:
+
+### Unit Tests
+
+Test individual functions and components where applicable.
+
+### Integration Tests
+
+Test communication between:
+
+- Frontend and backend.
+- API and database.
+- Authentication and protected resources.
+- Admin operations and database records.
+
+### End-to-End Tests
+
+Test complete user and admin workflows.
+
+Examples:
+
+USER WORKFLOW:
+
+1. Open the application.
+2. Browse existing pages.
+3. Search for a product, if supported.
+4. Add an item to cart.
+5. Update cart quantity.
+6. Complete checkout using a safe test payment environment, if available.
+7. Verify the order.
+8. Open the account page.
+9. Verify order history.
+10. Test wishlist functionality.
+
+ADMIN WORKFLOW:
+
+1. Open admin login.
+2. Authenticate using a test admin account.
+3. Open the dashboard.
+4. View existing data tables.
+5. Create a temporary record.
+6. Verify it in the database.
+7. Update the record.
+8. Verify the updated database value.
+9. Delete the temporary record.
+10. Verify the deletion.
+11. Log out.
+12. Verify that protected admin routes are no longer accessible.
+
+Only test workflows supported by the existing project.
+
+Run the available:
+
+- Lint checks.
+- Type checks.
+- Unit tests.
+- Integration tests.
+- End-to-end tests.
+- Production build.
+
+Fix genuine failures.
+
+Do not disable tests, skip failing assertions, or weaken validation merely to obtain a passing result.
+
+---
+
+# 16. PHASE FIFTEEN — BUG FIXING & REGRESSION PREVENTION
+
+After completing the audit:
+
+1. Collect every verified issue.
+2. Categorize issues by severity.
+3. Identify their root causes.
+4. Determine which files and modules are affected.
+5. Apply the smallest reliable fixes.
+6. Run relevant tests after each meaningful fix.
+7. Run regression tests.
+8. Verify that previously working features still work.
+
+Use this priority order:
+
+- CRITICAL: Security vulnerability, data loss, complete application failure.
+- HIGH: Authentication failures, broken CRUD, database persistence failures, critical admin failures.
+- MEDIUM: Broken functionality, API errors, incorrect calculations, major performance problems.
+- LOW: Minor bugs, non-critical edge cases, small technical issues.
+
+Do not spend time on unnecessary refactoring while critical bugs remain unresolved.
+
+---
+
+# 17. PHASE SIXTEEN — PRODUCTION READINESS
+
+Evaluate the entire project against production standards.
+
+Check:
+
+### Application Stability
+- Application starts successfully.
+- Existing routes work.
+- No critical runtime errors.
+- No unhandled exceptions.
+- No broken application dependencies.
+
+### Database Reliability
+- Stable database connection.
+- Valid schema.
+- Safe migrations.
+- Correct relationships.
+- Reliable data persistence.
+- Proper error handling.
+
+### Security
+- Secure authentication.
+- Correct authorization.
+- Protected admin operations.
+- Safe configuration.
+- No exposed secrets.
+
+### Performance
+- Reasonable loading times.
+- Efficient database queries.
+- No obvious memory leaks.
+- No unnecessary requests.
+
+### Maintainability
+- Existing code conventions preserved.
+- Clear error handling.
+- No unnecessary duplicate logic.
+- No unused or broken imports introduced by fixes.
+- No temporary debugging code left behind.
+
+### Production Configuration
+- Correct environment variable usage.
+- No development-only test configuration accidentally enabled in production.
+- No test data included in production data.
+- Correct production build configuration.
+- No unsafe debug settings.
+
+Do not deploy the application or modify production infrastructure unless explicitly authorized.
+
+A successful local build alone does not prove production readiness.
+
+---
+
+# 18. PHASE SEVENTEEN — FINAL VERIFICATION
+
+After all fixes are completed, perform one final verification of the entire application.
+
+Run the available:
+
+- Application startup check.
+- Production build.
+- Lint check.
+- Type check.
+- Unit tests.
+- Integration tests.
+- End-to-end tests.
+- Database persistence checks.
+- Admin CRUD tests.
+- Authentication tests.
+- Authorization tests.
+- Security checks.
+- Regression tests.
+
+Verify that:
+
+- The original design is preserved.
+- Existing features are not unintentionally removed.
+- Database operations work correctly.
+- Data persists after refresh and application restart where applicable.
+- Admin CRUD operations work.
+- Protected routes are secure.
+- APIs return correct responses.
+- No critical errors remain.
+- The production build succeeds.
+
+If any test cannot run, explicitly explain why.
+
+---
+
+# 19. IMPLEMENTATION RULES
+
+You are authorized to inspect existing files and implement necessary, verified bug fixes directly in the existing project.
+
+Follow these implementation principles:
+
+1. Understand before changing.
+2. Diagnose before fixing.
+3. Preserve before replacing.
+4. Test before marking complete.
+5. Verify persistence before claiming data is saved.
+6. Protect existing data.
+7. Avoid unnecessary dependencies.
+8. Avoid unnecessary architecture changes.
+9. Preserve existing UI/UX.
+10. Keep changes focused and maintainable.
+
+Do not stop after generating a report.
+
+Actually implement the safe, necessary fixes using the available project-editing and execution capabilities.
+
+Save all intended source-code changes in the existing project.
+
+Do not claim to have edited, tested, or saved a file unless the operation actually succeeded.
+
+If a task requires unavailable credentials, infrastructure, or tools, clearly identify the blocker instead of pretending it was completed.
+
+---
+
+# 20. FINAL REPORT — REQUIRED FORMAT
+
+When the work is complete, provide a detailed final report in this structure:
+
+## A. Project Understanding
+- Identified technology stack.
+- Frontend architecture.
+- Backend architecture.
+- Database technology.
+- Existing project modules.
+- Admin panel structure.
+
+## B. Audit Summary
+- Total pages inspected.
+- Total modules inspected.
+- Total API endpoints inspected.
+- Total database tables inspected.
+- Total CRUD operations tested.
+- Total workflows tested.
+
+Report actual counts only.
+
+## C. Problems Identified
+
+For each problem, provide:
+
+- Problem title.
+- Severity.
+- Root cause.
+- Affected file or module.
+- Fix implemented.
+- Verification result.
+
+## D. CRUD & Database Test Results
+
+Provide a table:
+
+| Module | Create | Read | Update | Delete | Database Persistence |
+|---|---|---|---|---|---|
+| Products | PASS/FAIL/BLOCKED | ... | ... | ... | ... |
+| Categories | ... | ... | ... | ... | ... |
+| Orders | ... | ... | ... | ... | ... |
+| Users | ... | ... | ... | ... | ... |
+
+Include only modules that actually exist.
+
+## E. Admin Panel Test Results
+- Dashboard.
+- Data tables.
+- Search.
+- Filtering.
+- Pagination.
+- Forms.
+- CRUD.
+- Permissions.
+- Authentication.
+
+Report actual test results.
+
+## F. Security Audit
+- Vulnerabilities identified.
+- Security fixes implemented.
+- Remaining security concerns.
+
+## G. Automated Testing Results
+
+| Test | Result | Details |
+|---|---|---|
+| Lint | PASS/FAIL/BLOCKED | Actual output |
+| Type Check | PASS/FAIL/BLOCKED | Actual output |
+| Unit Tests | PASS/FAIL/BLOCKED | Actual output |
+| Integration Tests | PASS/FAIL/BLOCKED | Actual output |
+| E2E Tests | PASS/FAIL/BLOCKED | Actual output |
+| Production Build | PASS/FAIL/BLOCKED | Actual output |
+
+## H. Files Changed
+List every modified, created, or deleted file and explain why it changed.
+
+Clearly disclose any database migration.
+
+## I. Remaining Issues
+List all unresolved issues, blocked tests, missing credentials, and infrastructure limitations.
+
+Do not hide failures.
+
+## J. Final Production Readiness Assessment
+
+Choose exactly one status:
+
+- PRODUCTION READY — All required checks passed, and no known critical blockers remain.
+- CONDITIONALLY READY — The application works, but some non-critical checks or external integrations remain unverified.
+- NOT PRODUCTION READY — Critical problems, failed checks, or unresolved security/data integrity issues remain.
+
+Explain the reason for the selected status.
+
+---
+
+# FINAL COMMAND
+
+Now begin with a complete inspection of the EXISTING PROJECT.
+
+First understand its architecture, features, database, frontend, backend, and admin panel.
+
+Then systematically test every existing functionality.
+
+Identify every verified problem.
+
+Fix the problems safely.
+
+Test all existing Create, Read, Update, and Delete operations.
+
+Verify real database persistence using an isolated test environment.
+
+Audit authentication, authorization, APIs, security, performance, and application stability.
+
+Run all available automated tests and the production build.
+
+Perform regression testing after implementing fixes.
+
+**MOST IMPORTANT: DO NOT REDESIGN, DO NOT REBUILD, DO NOT REMOVE WORKING FEATURES, DO NOT DESTROY EXISTING DATA, AND DO NOT INTRODUCE UNNECESSARY CHANGES.**
+
+Preserve the existing design and application structure.
+
+Make the existing project stable, secure, functional, maintainable, and as production-ready as the available environment allows.
+
+Do not stop at analysis or recommendations. Implement and verify the necessary fixes.
+
+Be accurate, systematic, careful, and transparent about every result.

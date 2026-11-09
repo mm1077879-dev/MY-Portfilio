@@ -1,0 +1,1219 @@
+# ULTIMATE MASTER PROMPT
+## EXACT VISUAL REFERENCE FOOTER RECREATION + FULL-STACK IMPLEMENTATION + COMPLETE WEBSITE RESPONSIVENESS
+
+### ROLE
+
+Act as a world-class:
+
+- Senior Full-Stack Software Architect
+- Premium UI/UX Designer
+- Senior Frontend Engineer
+- Senior Backend Engineer
+- Database Engineer
+- Responsive Web Design Specialist
+- Accessibility Engineer
+- QA Automation Engineer
+- Performance Optimization Engineer
+
+You are working on my EXISTING WEBSITE PROJECT inside Google AI Studio.
+
+I have provided a reference footer design image.
+
+Your primary task is to recreate that footer as closely as possible while integrating it naturally into my existing website.
+
+This is not a request to generate a static image or visual mockup.
+
+**You must implement a fully functional, responsive, real-code footer connected to the actual application architecture, backend, APIs, and database wherever applicable.**
+
+The reference image is the PRIMARY VISUAL BLUEPRINT.
+
+The existing website is the PRIMARY BRANDING SOURCE.
+
+Both must work together.
+
+---
+
+# 1. MOST IMPORTANT DEVELOPMENT RULES
+
+Before making any changes, inspect the complete existing project.
+
+Understand:
+
+- Frontend framework.
+- Backend framework.
+- Existing application architecture.
+- Homepage design.
+- Website color palette.
+- Logo and branding.
+- Typography.
+- Existing component system.
+- Admin Panel design.
+- Routing.
+- Existing footer implementation.
+- API architecture.
+- Database schema.
+- Existing website settings.
+- Existing newsletter functionality.
+- Existing social media links.
+- Existing contact information.
+
+### Preserve Existing Website
+
+Do not rebuild the website.
+
+Do not replace the framework.
+
+Do not redesign the homepage.
+
+Do not unnecessarily change existing components.
+
+Do not remove working functionality.
+
+Do not introduce unrelated features.
+
+Do not destroy existing data.
+
+Do not replace existing branding with random branding.
+
+Only implement the requested footer and the necessary responsive fixes.
+
+### Visual Priority
+
+Follow this order:
+
+1. The uploaded reference image determines the footer's visual structure and design direction.
+2. The existing website determines the actual brand identity, logo, content, and color compatibility.
+3. The existing application architecture determines how the footer is implemented and managed.
+
+The final result should look extremely close to the reference image while still feeling like an authentic part of my existing website.
+
+---
+
+# 2. REFERENCE IMAGE — EXACT DESIGN ANALYSIS
+
+Study the provided reference image carefully before coding.
+
+Recreate its overall visual composition, proportions, styling, spacing, and visual hierarchy.
+
+The design has the following major sections.
+
+## A. Overall Footer Background
+
+Create a deep, premium, dark navy/black footer background.
+
+Visual characteristics:
+
+- Deep black/navy gradient background.
+- Neon purple highlights.
+- Electric blue highlights.
+- Cyan lighting effects.
+- Soft purple glow.
+- Subtle blue glow.
+- Thin luminous borders.
+- Smooth curved decorative lines.
+- Premium dark futuristic atmosphere.
+
+Suggested starting color direction:
+
+- Primary background: #020518
+- Secondary background: #050B24
+- Neon purple: #9B1CFF
+- Electric blue: #087BFF
+- Cyan: #00BFFF
+- Main text: #F5F7FF
+- Secondary text: #B8C4E5
+
+These are initial visual references, not mandatory hardcoded colors.
+
+Adjust them to match the existing website's actual brand palette.
+
+Do not introduce unrelated colors.
+
+## B. Top Decorative Neon Waves
+
+At the top of the footer, recreate the beautiful flowing wave design shown in the reference.
+
+Requirements:
+
+- Multiple curved flowing lines.
+- Purple-to-blue gradients.
+- Smooth luminous edges.
+- Subtle neon glow.
+- Elegant dark background.
+- Responsive positioning.
+
+Use lightweight SVG, CSS, or existing visual assets.
+
+The curves should stretch naturally across the footer.
+
+They must not create horizontal overflow.
+
+The decorative elements must not interfere with buttons, links, or other interactions.
+
+## C. Main Footer Layout
+
+Recreate the main footer using three major content areas.
+
+DESKTOP STRUCTURE:
+
+LEFT SECTION:
+Brand Profile + Description + Social Links + App Download Card
+
+CENTER SECTION:
+Quick Links + Our Services
+
+RIGHT SECTION:
+Newsletter Subscription + Contact Information
+
+Maintain the same visual hierarchy and balanced proportions as the reference.
+
+Use a responsive grid that adapts to available screen width.
+
+---
+
+# 3. LEFT SECTION — BRAND PROFILE
+
+Recreate the left-side composition.
+
+Include the actual existing website logo.
+
+Display:
+
+- Brand logo.
+- Existing website or company name.
+- Actual tagline or professional designation.
+- Short existing brand description.
+
+Do not copy "Mahim Dev" from the reference unless that is genuinely the existing project's brand.
+
+Use the actual application branding.
+
+## Brand Description
+
+Display the real company or website description.
+
+Keep the text visually similar in length and hierarchy to the reference.
+
+Do not invent fake company information.
+
+## Social Media Icons
+
+Recreate the circular outlined social media icon buttons.
+
+Examples:
+
+- GitHub.
+- YouTube.
+- LinkedIn.
+- X.
+- Facebook.
+- Discord.
+
+Use the actual social platforms configured for the project.
+
+Requirements:
+
+- Circular shape.
+- Thin purple/blue gradient border.
+- Professional icon.
+- Subtle hover glow.
+- Smooth transition.
+- Consistent sizing.
+- Clear hover and focus states.
+
+Each icon must open its correct configured social media destination.
+
+Do not use "#" as a fake link.
+
+Do not display nonexistent or unconfigured social accounts.
+
+Use accessible labels for every icon-only button.
+
+## App Download Card
+
+Recreate the premium app-download panel shown in the reference.
+
+Visual elements:
+
+- Glowing rounded rectangular panel.
+- Purple and blue border.
+- Mobile/app icon on the left.
+- Download title.
+- Supporting text.
+- Google Play badge.
+- Apple App Store badge.
+- Navigation arrow or action icon.
+
+Use genuine app store destinations only if the actual application has them.
+
+If the application does not have a published mobile app, do not invent app store links or show misleading download badges.
+
+In that situation, preserve the design language using actual existing download links or hide the unavailable app-download options gracefully.
+
+---
+
+# 4. CENTER SECTION — QUICK LINKS & OUR SERVICES
+
+Recreate the two-column navigation area.
+
+## Quick Links
+
+Create a heading with:
+
+- Small rounded pill-style heading.
+- Grid/menu icon.
+- Existing brand-compatible gradient border.
+- Dark transparent background.
+- Subtle neon glow.
+
+Below it, display the existing website navigation links.
+
+Examples:
+
+- Home.
+- Projects.
+- Services.
+- About.
+- Contact.
+- Pricing.
+- FAQs.
+- Privacy Policy.
+
+Only include routes that actually exist in the project.
+
+Each link must navigate to its correct internal route.
+
+Use the actual router and navigation architecture.
+
+Add an elegant right-arrow indicator similar to the reference.
+
+Hover behavior:
+
+- Text color transition.
+- Subtle purple/cyan glow.
+- Arrow movement.
+- Smooth interaction.
+
+Do not use dead links.
+
+## Our Services
+
+Create a second navigation group.
+
+Include:
+
+- Web Development.
+- App Development.
+- UI/UX Design.
+- SEO Optimization.
+- Digital Marketing.
+- Branding Design.
+- Consultation.
+- Support.
+
+Only display services genuinely offered by the existing website.
+
+Use the existing service data if available.
+
+Maintain the reference's vertical alignment and spacing.
+
+Add a subtle separator between Quick Links and Our Services on desktop.
+
+Do not use fake external destinations.
+
+---
+
+# 5. RIGHT SECTION — NEWSLETTER & CONTACT INFORMATION
+
+This section must closely follow the reference.
+
+## Newsletter Heading
+
+Create a premium pill-style heading:
+
+- Envelope icon.
+- Newsletter text.
+- Purple/cyan border.
+- Dark background.
+- Smooth glow.
+
+Below it, create the newsletter headline.
+
+Example visual wording:
+
+"Get the latest updates!"
+
+Use the existing brand's visual identity and an attractive gradient text treatment.
+
+Supporting text should explain the newsletter accurately.
+
+## Newsletter Subscription Form
+
+Create a premium rounded newsletter input.
+
+Required elements:
+
+- Email input.
+- Email icon.
+- Clear placeholder.
+- Subscribe button.
+- Send/paper-plane icon.
+- Purple-to-blue gradient.
+- Smooth hover effect.
+- Focus state.
+- Loading state.
+- Success state.
+- Error state.
+
+The input and button must work correctly.
+
+### Actual Backend Integration
+
+The newsletter must not be a frontend-only demonstration.
+
+Expected workflow:
+
+USER EMAIL
+→ FRONTEND VALIDATION
+→ BACKEND API
+→ SERVER-SIDE VALIDATION
+→ DUPLICATE SUBSCRIPTION CHECK
+→ DATABASE SAVE
+→ CONFIRMED API RESPONSE
+→ SUCCESS FEEDBACK
+
+Use the existing newsletter API and database structure if available.
+
+If missing, implement the smallest necessary production-compatible integration.
+
+Required behavior:
+
+- Validate email addresses.
+- Prevent duplicate subscriptions.
+- Store subscription information in the actual database.
+- Use suitable subscription status fields.
+- Handle invalid input.
+- Handle failed requests.
+- Prevent repeated submissions.
+- Display truthful success/error notifications.
+- Protect the endpoint against spam and abuse.
+
+If an email confirmation or mailing service is already configured, integrate it correctly.
+
+If no provider is configured, save the subscription and report that email delivery/automation still requires provider configuration.
+
+Never display "Successfully subscribed" before the backend confirms the subscription was saved.
+
+Do not pretend an email was sent if no email service actually sent it.
+
+## Contact Information
+
+Recreate the Contact Info area below the newsletter.
+
+Include the real configured information:
+
+- Phone number.
+- Email address.
+- Business address.
+
+Use attractive cyan/blue icons.
+
+Suggested icons:
+
+- Phone.
+- Mail.
+- Map pin.
+
+Make them functional:
+
+Phone:
+Use a correct telephone link.
+
+Email:
+Use a correct mailto link.
+
+Address:
+Open the correct map location when a verified map destination is available.
+
+Do not invent phone numbers, email addresses, or addresses.
+
+Use actual project settings or existing website content.
+
+## Decorative City Skyline
+
+The reference contains a beautiful glowing city skyline in the bottom-right section.
+
+Recreate this visual element.
+
+Requirements:
+
+- Dark futuristic city silhouette.
+- Blue and purple illuminated buildings.
+- Neon lighting.
+- Subtle glow.
+- Smooth integration into the footer background.
+- Appropriate responsive positioning.
+
+Use existing project assets where appropriate.
+
+Otherwise create a lightweight original SVG or CSS-based decorative illustration.
+
+Do not use the uploaded screenshot as a flattened footer background.
+
+The footer must remain fully semantic, interactive, editable, and accessible.
+
+The illustration must not overlap or block the newsletter or contact information.
+
+---
+
+# 6. TRUST & FEATURES STRIP
+
+Directly below the main footer content, recreate the wide horizontal trust strip.
+
+It must closely resemble the reference image.
+
+Create a large rounded rectangle with:
+
+- Dark gradient background.
+- Glowing purple/blue border.
+- Four equally balanced content items.
+- Vertical separators on desktop.
+- Attractive icons.
+- Heading and supporting text.
+
+Suggested content structure:
+
+ITEM 1:
+Security icon.
+"100% Secure"
+"Your data is always protected."
+
+ITEM 2:
+Lightning icon.
+"24/7 Support"
+"We are here to help."
+
+ITEM 3:
+Diamond icon.
+"Premium Quality"
+"Delivering excellence."
+
+ITEM 4:
+Handshake icon.
+"Trusted by Our Clients"
+"Building success together."
+
+IMPORTANT:
+
+Use factual claims from the existing website.
+
+Do not falsely claim:
+
+- 10K+ clients.
+- 100% security.
+- 24/7 support.
+- Certifications.
+- Awards.
+- Guarantees.
+
+Unless the project genuinely supports those claims.
+
+Use accurate existing business information.
+
+Use premium blue and purple icons with subtle glow.
+
+Maintain balanced spacing and separators.
+
+Make the entire strip responsive.
+
+---
+
+# 7. BOTTOM COPYRIGHT & NAVIGATION BAR
+
+Recreate the bottom bar shown in the reference.
+
+Include:
+
+LEFT:
+Copyright notice with current year and actual company/brand name.
+
+CENTER:
+Main navigation links.
+
+RIGHT:
+Follow Us label and social media icons.
+
+FAR RIGHT:
+Circular Back To Top button.
+
+## Copyright
+
+Use the actual brand name.
+
+Generate the current year dynamically instead of hardcoding an outdated year.
+
+## Bottom Navigation
+
+Use the real existing routes.
+
+Examples:
+
+- Home.
+- Projects.
+- Services.
+- About.
+- Contact.
+
+Ensure all navigation destinations work.
+
+## Social Icons
+
+Use the actual existing social destinations.
+
+Ensure accessible keyboard interaction.
+
+## Back To Top Button
+
+Create the elegant circular floating-style button shown in the reference.
+
+Requirements:
+
+- Purple/blue glowing circular border.
+- Up-arrow icon.
+- Smooth hover effect.
+- Minimum accessible touch target.
+- Smooth scroll-to-top behavior.
+- Proper keyboard accessibility.
+
+The button must actually scroll the page to the top.
+
+Do not use an empty click handler.
+
+---
+
+# 8. FOOTER ON EVERY PAGE
+
+This requirement is extremely important.
+
+The footer must be consistent across every applicable website page.
+
+Do not independently create different footers for different routes.
+
+Inspect the existing application architecture and implement a shared reusable Footer component.
+
+Integrate it through the appropriate global layout or application shell.
+
+Verify all applicable routes:
+
+- Homepage.
+- Projects.
+- Project details.
+- Services.
+- About.
+- Contact.
+- Pricing.
+- FAQs.
+- Other existing public pages.
+
+If an existing page intentionally has a different layout, preserve its current architectural behavior unless a change is necessary.
+
+Do not duplicate the footer code throughout individual page components.
+
+All pages should use the same centralized footer content and design.
+
+---
+
+# 9. ADMIN PANEL — COMPLETE FOOTER MANAGEMENT
+
+I want the footer to be manageable through the existing Admin Panel wherever the application architecture supports content management.
+
+First inspect existing settings, CMS, and website management modules.
+
+Reuse them instead of creating duplicate modules.
+
+The administrator should be able to manage:
+
+### Brand Settings
+
+- Logo.
+- Company name.
+- Tagline.
+- Description.
+
+### Navigation Settings
+
+- Quick Links.
+- Link titles.
+- Link destinations.
+- Service names.
+- Service destinations.
+- Display order.
+- Active/inactive status.
+
+### Social Settings
+
+- Social platform.
+- Icon.
+- Profile URL.
+- Display order.
+- Visibility.
+
+### App Download Settings
+
+- App display name.
+- Google Play URL.
+- App Store URL.
+- Download badge visibility.
+
+### Contact Settings
+
+- Phone.
+- Email.
+- Address.
+- Map destination.
+
+### Newsletter Settings
+
+- Newsletter headline.
+- Supporting text.
+- Subscribe button text.
+- Subscription status.
+- Subscriber management, where applicable.
+
+### Trust Strip Settings
+
+- Icon.
+- Heading.
+- Description.
+- Visibility.
+- Display order.
+
+### Footer Appearance Settings
+
+Where the existing settings system supports them:
+
+- Footer background.
+- Accent colors.
+- Decorative visual toggles.
+- Footer section visibility.
+
+Preserve the established visual design. Do not expose excessive arbitrary customization that could destroy the reference appearance.
+
+### Data Persistence
+
+All admin changes must be handled by the actual backend and saved in the real database.
+
+After saving:
+
+1. Verify the backend response.
+2. Verify database persistence.
+3. Refresh the admin panel.
+4. Verify the saved values remain.
+5. Open the frontend.
+6. Verify the footer displays updated values.
+
+Do not store footer configuration only in React state or localStorage.
+
+Do not hardcode values that the admin is expected to manage.
+
+Admin management must enforce backend authorization.
+
+If an existing suitable settings module is available, extend it.
+
+If essential functionality is genuinely missing, implement the smallest consistent management interface.
+
+---
+
+# 10. COMPLETE WEBSITE RESPONSIVENESS AUDIT
+
+This is the second major objective.
+
+Inspect the entire existing website, not only the footer.
+
+Determine whether every existing page and major component is responsive across mobile, tablet, laptop, desktop, and large desktop screens.
+
+Do not assume the existing responsive system works simply because the homepage looks correct.
+
+## A. Required Viewport Testing
+
+Test at the following representative viewport widths:
+
+| Device Category | Viewport Width |
+|---|---:|
+| Small Mobile | 320px |
+| Mobile | 360px |
+| Mobile | 375px |
+| Mobile | 390px |
+| Mobile | 414px |
+| Large Mobile | 430px |
+| Small Tablet | 600px |
+| Tablet | 768px |
+| Large Tablet | 820px |
+| Laptop | 1024px |
+| Laptop | 1280px |
+| Desktop | 1366px |
+| Desktop | 1440px |
+| Large Desktop | 1600px |
+| Extra Large Desktop | 1920px |
+
+Use available browser testing tools or responsive preview tools.
+
+Test the actual running application.
+
+## B. Full Website Responsive Inspection
+
+Inspect all existing pages and components:
+
+- Header.
+- Navigation menu.
+- Hero sections.
+- Homepage sections.
+- Cards.
+- Grids.
+- Product displays.
+- Forms.
+- Tables.
+- Dashboard layouts.
+- Admin pages.
+- Modals.
+- Images.
+- Buttons.
+- Footer.
+- Mobile navigation.
+
+Check:
+
+- Horizontal overflow.
+- Broken layouts.
+- Text clipping.
+- Image distortion.
+- Overlapping sections.
+- Unreadable text.
+- Too-small touch targets.
+- Incorrect spacing.
+- Misaligned elements.
+- Fixed-width components.
+- Broken navigation.
+- Unusable forms.
+- Unresponsive tables.
+
+## C. Fix Responsiveness Without Redesigning
+
+If any existing section is not responsive:
+
+Fix it using the existing design system.
+
+Preserve:
+
+- Desktop visual hierarchy.
+- Existing brand colors.
+- Component styling.
+- Typography.
+- Layout identity.
+- Existing content.
+
+Use appropriate techniques:
+
+- Responsive CSS Grid.
+- Flexbox.
+- Fluid sizing.
+- Relative units.
+- Media queries.
+- Responsive images.
+- Proper text wrapping.
+- Adaptive spacing.
+- Accessible mobile menus.
+- Responsive tables or controlled overflow where appropriate.
+
+Do not randomly shrink everything to fit mobile screens.
+
+Create well-balanced responsive layouts.
+
+---
+
+# 11. RESPONSIVE FOOTER DESIGN DETAILS
+
+The footer must reproduce the reference layout on desktop and adapt naturally on smaller devices.
+
+## Desktop — 1200px and Above
+
+Preserve the three major content areas.
+
+Display:
+
+LEFT:
+Brand identity, description, social icons, app download card.
+
+CENTER:
+Quick Links and Our Services in two columns.
+
+RIGHT:
+Newsletter and contact information.
+
+Below:
+Four-item trust strip.
+
+Bottom:
+Copyright, navigation, social icons, and back-to-top button.
+
+Maintain the reference's overall proportions.
+
+## Tablet — 768px to 1199px
+
+Reorganize the content intelligently.
+
+Possible layout:
+
+- Brand section across the first row or one side.
+- Quick Links and Our Services grouped together.
+- Newsletter and Contact in a balanced section.
+- Trust strip in a 2×2 arrangement.
+
+Avoid squeezing desktop columns until they become unreadable.
+
+## Mobile — 320px to 767px
+
+Create a beautiful vertically stacked layout.
+
+Suggested order:
+
+1. Brand profile.
+2. Social media icons.
+3. App download panel, if applicable.
+4. Quick Links.
+5. Our Services.
+6. Newsletter.
+7. Contact information.
+8. Trust and features strip.
+9. Copyright and navigation.
+10. Back-to-top button.
+
+Use sensible mobile spacing.
+
+All elements must fit inside the viewport.
+
+The form input and Subscribe button must be easy to use.
+
+Social buttons must have accessible touch targets.
+
+The decorative waves and city illustration should scale or simplify without causing horizontal overflow.
+
+Never allow content to overlap or become clipped.
+
+---
+
+# 12. ACCESSIBILITY REQUIREMENTS
+
+Implement reasonable accessibility standards.
+
+Check:
+
+- Semantic footer element.
+- Correct heading hierarchy.
+- Accessible navigation labels.
+- Keyboard navigation.
+- Visible focus indicators.
+- Accessible form labels.
+- Proper input error messages.
+- Sufficient text contrast.
+- Accessible icon buttons.
+- Useful image alternative text.
+- Screen-reader-friendly success messages.
+- Reduced-motion support.
+
+Do not sacrifice usability for decoration.
+
+---
+
+# 13. PERFORMANCE OPTIMIZATION
+
+The premium visual design must not make the website unnecessarily slow.
+
+Inspect:
+
+- SVG complexity.
+- CSS animation performance.
+- Image sizes.
+- Background assets.
+- Unnecessary JavaScript.
+- Component rendering.
+- API requests.
+- Footer configuration loading.
+
+Requirements:
+
+- Avoid unnecessarily large assets.
+- Lazy-load nonessential decorative assets where appropriate.
+- Avoid layout shifts.
+- Avoid animation loops when not visible.
+- Avoid duplicate API calls.
+- Use caching thoughtfully.
+- Avoid unnecessary libraries.
+- Maintain smooth scrolling and interaction.
+
+Decorative animations should respect reduced-motion preferences.
+
+The footer must not negatively affect the performance of the entire website.
+
+---
+
+# 14. TESTING & REAL BACKEND VERIFICATION
+
+Do not consider the task complete just because the footer looks correct.
+
+### FRONTEND TESTS
+
+Verify:
+
+- Footer appears on every applicable route.
+- Logo appears correctly.
+- Navigation works.
+- Social links work.
+- Contact links work.
+- App download links work where configured.
+- Newsletter form works.
+- Back-to-top works.
+- Hover states work.
+- Responsive breakpoints work.
+- No JavaScript errors.
+
+### BACKEND TESTS
+
+Verify:
+
+- Footer settings are loaded correctly.
+- Admin changes are saved.
+- Database records are correct.
+- Unauthorized admins/users cannot modify protected settings.
+- Newsletter submissions reach the backend.
+- Duplicate email subscriptions are handled correctly.
+- Backend errors are displayed correctly.
+
+### DATABASE TESTS
+
+Use an isolated test database.
+
+Verify:
+
+1. Update footer settings.
+2. Save changes through the actual backend.
+3. Read the persisted database values.
+4. Refresh the admin panel.
+5. Confirm the values remain.
+6. Open the public website.
+7. Confirm the footer reflects the saved settings.
+8. Subscribe using a test email.
+9. Verify database insertion.
+10. Test duplicate subscription behavior.
+
+Do not use destructive operations on production data.
+
+Do not claim a feature works without successful verification.
+
+### RESPONSIVE TESTS
+
+Test every important existing page at the specified viewport sizes.
+
+Check for horizontal scrolling and layout breakage.
+
+Use browser automation where available.
+
+---
+
+# 15. IMPLEMENTATION STRATEGY
+
+Follow this exact sequence:
+
+PHASE 1:
+Inspect the entire existing project.
+
+PHASE 2:
+Analyze the uploaded reference image carefully.
+
+PHASE 3:
+Inspect the existing website's branding and design system.
+
+PHASE 4:
+Plan the reusable footer architecture.
+
+PHASE 5:
+Implement the premium reference-matched footer.
+
+PHASE 6:
+Implement the real newsletter and footer data integrations.
+
+PHASE 7:
+Connect footer management to the existing Admin Panel and backend.
+
+PHASE 8:
+Audit the complete website for responsiveness.
+
+PHASE 9:
+Fix all verified responsive problems without redesigning working sections.
+
+PHASE 10:
+Run functional, database, security, and responsive tests.
+
+PHASE 11:
+Run regression testing across existing routes.
+
+PHASE 12:
+Run lint, type checking, available automated tests, and production build.
+
+PHASE 13:
+Provide a detailed evidence-based report.
+
+Do not stop after creating a visual mockup.
+
+Do not stop after writing the Footer component.
+
+Implement, connect, save, test, and verify everything.
+
+---
+
+# 16. FINAL QUALITY REQUIREMENTS
+
+The final implementation must satisfy these requirements:
+
+1. The footer should visually match the uploaded reference as closely as possible.
+2. The footer should use the existing website branding.
+3. The footer should appear consistently across all applicable pages.
+4. Navigation links should work.
+5. Social links should work.
+6. Contact information should be genuine.
+7. Newsletter subscriptions should be saved through the actual backend.
+8. Admin footer settings should persist in the actual database.
+9. The footer should be professionally responsive.
+10. The complete website should be audited for responsiveness.
+11. Existing desktop designs should be preserved.
+12. Mobile layouts should be properly adapted.
+13. No unnecessary project architecture changes.
+14. No fake backend functionality.
+15. No broken links.
+16. No horizontal overflow.
+17. No unintended layout regressions.
+18. No production data loss.
+
+---
+
+# 17. REQUIRED FINAL REPORT
+
+After completing the implementation, provide the following report:
+
+## A. Project Discovery
+
+- Frontend framework.
+- Backend framework.
+- Database.
+- Existing footer architecture.
+- Existing admin management architecture.
+
+## B. Footer Implementation
+
+- Reference design recreation.
+- Desktop layout.
+- Tablet layout.
+- Mobile layout.
+- Brand consistency.
+- Decorative elements.
+- Navigation.
+- Contact information.
+- Social links.
+- App download links.
+- Back-to-top functionality.
+
+## C. Backend & Database
+
+- Newsletter API.
+- Newsletter persistence.
+- Footer settings API.
+- Admin save/update functionality.
+- Database verification.
+- Security and permissions.
+
+## D. Responsive Audit Results
+
+Provide actual results:
+
+| Viewport | Homepage | Other Pages | Footer | Issues |
+|---|---|---|---|---|
+| 320px | PASS/FAIL | ... | ... | ... |
+| 360px | ... | ... | ... | ... |
+| 390px | ... | ... | ... | ... |
+| 414px | ... | ... | ... | ... |
+| 768px | ... | ... | ... | ... |
+| 1024px | ... | ... | ... | ... |
+| 1280px | ... | ... | ... | ... |
+| 1440px | ... | ... | ... | ... |
+| 1920px | ... | ... | ... | ... |
+
+Include other tested routes where relevant.
+
+## E. Files Modified
+
+List every modified, created, or deleted file with its actual purpose.
+
+## F. Testing Results
+
+Report:
+
+- Functional tests.
+- API tests.
+- Database persistence tests.
+- Newsletter tests.
+- Admin management tests.
+- Responsive tests.
+- Accessibility checks.
+- Build result.
+
+## G. Remaining Issues
+
+Clearly identify any:
+
+- Missing API credentials.
+- Missing email provider.
+- Missing social URLs.
+- Missing app download URLs.
+- Unsupported integrations.
+- Failed tests.
+- Unverified functionality.
+
+Do not hide blockers.
+
+## H. Final Status
+
+Choose one:
+
+- PRODUCTION READY
+- CONDITIONALLY READY
+- NOT PRODUCTION READY
+
+Justify the selected status with actual test evidence.
+
+---
+
+# FINAL COMMAND
+
+Start by carefully reading and understanding the entire EXISTING PROJECT.
+
+Use the uploaded reference image as the main visual blueprint.
+
+Create an exceptionally premium, futuristic, dark-neon footer with the same overall structure, visual hierarchy, proportions, decorative waves, brand profile, social icons, app download section, Quick Links, Our Services, Newsletter, Contact Information, glowing city skyline, trust strip, and bottom copyright/navigation bar.
+
+Make it part of the actual existing website.
+
+Ensure every footer component works correctly.
+
+Connect editable footer content to the real Admin Panel and backend where applicable.
+
+Make newsletter subscriptions actually persist in the database.
+
+Then audit the entire website across mobile, tablet, laptop, desktop, and large desktop viewports.
+
+Fix all verified responsiveness problems while preserving the original website design.
+
+**THE TARGET IS NOT JUST A BEAUTIFUL FOOTER IMAGE. THE TARGET IS A REAL, REUSABLE, FULLY FUNCTIONAL, BACKEND-INTEGRATED, DATABASE-CONNECTED, PREMIUM RESPONSIVE FOOTER AND A PROFESSIONALLY RESPONSIVE EXISTING WEBSITE.**
+
+Do not rebuild anything unnecessarily.
+
+Preserve existing features, protect existing data, implement the changes directly, and verify the real results.

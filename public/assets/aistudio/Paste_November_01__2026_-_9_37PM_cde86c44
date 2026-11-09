@@ -1,0 +1,1000 @@
+# ULTIMATE MASTER PROMPT
+## EXISTING WEBSITE — IMAGE UPLOAD SYSTEM + LIVE PROJECT BUG FIX + PREMIUM RELOAD ANIMATION + COMPLETE MESSAGE SYSTEM
+
+### YOUR ROLE
+
+Act as an elite team of:
+
+- Senior Full-Stack Software Architect
+- Senior Frontend Engineer
+- Senior Backend Engineer
+- Database Engineer
+- UI/UX Specialist
+- QA Automation Engineer
+- Security Engineer
+- Performance Optimization Engineer
+
+You are working on my ALREADY EXISTING website project.
+
+Your mission is to thoroughly inspect, understand, repair, implement, test, and production-optimize the following four specific areas of my existing application.
+
+**IMPORTANT: Do not rebuild my website. Do not redesign the entire website. Do not unnecessarily modify existing components or architecture.**
+
+You must preserve the existing homepage, admin dashboard, visual identity, colors, typography, layouts, and all working features.
+
+You are authorized to make targeted design improvements only where necessary to implement the requested functionality, particularly the image upload interface and requested animations.
+
+You must implement the actual functionality, not merely provide recommendations or frontend demonstrations.
+
+---
+
+# STRICT DEVELOPMENT RULES
+
+Before starting:
+
+1. Inspect the complete existing project structure.
+2. Understand the frontend and backend architecture.
+3. Identify the existing database and storage systems.
+4. Inspect the existing admin panel.
+5. Understand the existing UI design and color system.
+6. Inspect existing APIs, components, and routes.
+7. Check the existing Git status and preserve uncommitted changes.
+8. Create or use a safe backup branch before modifying important files.
+
+### DO NOT:
+
+- Rebuild the application.
+- Replace the existing framework.
+- Change the existing homepage design.
+- Redesign the entire admin dashboard.
+- Change the existing color palette unnecessarily.
+- Remove working features.
+- Replace real backend functionality with frontend-only functionality.
+- Use fake API responses to claim success.
+- Use temporary browser state as permanent database storage.
+- Introduce unnecessary dependencies.
+- Delete existing user data.
+- Perform destructive operations on production.
+- Hardcode API keys, passwords, or storage credentials.
+- Break existing routes or APIs.
+- Introduce new bugs while fixing existing problems.
+
+Work with the existing project architecture.
+
+Every modification must have a clear technical reason.
+
+# TASK 01 — ADMIN PANEL PREMIUM IMAGE UPLOAD SYSTEM
+
+## Objective
+
+My existing Admin Panel has image-related fields where images may be provided through URLs.
+
+I want a proper professional File Explorer-based image upload system.
+
+When an administrator clicks the image upload button, the computer's native file selection window must open.
+
+The administrator should be able to select an image from their device and upload it directly into the application.
+
+After successful upload, the selected image should automatically appear in the corresponding image field and be saved through the existing backend and storage architecture.
+
+## A. Inspect All Existing Image Fields
+
+First inspect all existing image-related modules throughout the application.
+
+Examples include:
+
+- Product images.
+- Product thumbnails.
+- Category images.
+- Homepage banners.
+- Promotional banners.
+- Slider images.
+- Brand logos.
+- Content images.
+- Other existing admin-managed image fields.
+
+Discover the actual image management implementation and identify every relevant URL-only field.
+
+Do not create duplicate image management components unnecessarily.
+
+If multiple fields share the same image upload functionality, build a reusable uploader following the existing architecture.
+
+## B. Premium Upload Button Design
+
+Create a premium-level image upload button.
+
+The button must visually match:
+
+- Existing homepage branding.
+- Existing admin dashboard color palette.
+- Existing button styles.
+- Existing typography.
+- Existing border radius.
+- Existing shadows and visual effects.
+
+The button should feel like a natural part of the current application.
+
+Do not introduce random colors or an unrelated design system.
+
+Use an appropriate icon, such as an upload or image icon.
+
+Suggested button text:
+
+"Upload Image"
+
+Additional text:
+
+"Choose an image from your device"
+
+The final design must be clean, professional, premium, responsive, and visually consistent with the existing admin panel.
+
+## C. Native File Explorer Integration
+
+When the administrator clicks the Upload Image button:
+
+1. Open the native operating system file picker.
+2. Allow image selection from the device.
+3. Support appropriate image formats, such as:
+   - JPG
+   - JPEG
+   - PNG
+   - WEBP
+   - GIF, only if supported by the existing system.
+4. Validate the selected file.
+5. Display a preview of the selected image.
+6. Upload the actual file through the backend.
+7. Receive the final stored image URL or storage reference.
+8. Automatically associate that image with the correct entity or form field.
+9. Save the final reference through the existing database workflow.
+
+The user must not have to manually copy and paste an image URL.
+
+Use the browser's native file input functionality appropriately.
+
+Do not use a fake file picker or an artificial upload simulation.
+
+## D. Image Preview & Management
+
+Implement the following behaviors where applicable:
+
+- Image preview before saving.
+- Uploaded image preview after successful upload.
+- Replace existing image.
+- Remove selected image.
+- Upload progress indicator.
+- Loading state.
+- Success notification.
+- Error notification.
+- File type validation.
+- File size validation.
+- Empty image state.
+- Upload retry on failure.
+
+Do not break existing image records.
+
+Maintain compatibility with already saved image URLs.
+
+If existing external image URLs are used by existing records, preserve their ability to render.
+
+The primary upload method should now be File Explorer-based.
+
+Do not force a migration that breaks old image references.
+
+## E. Actual Backend Image Upload
+
+This is critical.
+
+The image uploader must not only update the frontend preview.
+
+Implement and verify the actual file upload process.
+
+Expected flow:
+
+DEVICE FILE EXPLORER
+→ IMAGE SELECTION
+→ FRONTEND VALIDATION
+→ BACKEND UPLOAD API
+→ SERVER-SIDE VALIDATION
+→ EXISTING PERSISTENT IMAGE STORAGE
+→ FINAL IMAGE URL / REFERENCE
+→ DATABASE SAVE
+→ FRONTEND DISPLAY
+
+Use the storage system already configured in the project, such as its existing cloud storage or object storage integration.
+
+Do not invent storage credentials.
+
+If no persistent storage exists, inspect the current infrastructure and implement a suitable production-compatible storage integration using environment variables and the project's existing conventions.
+
+Do not rely on temporary browser URLs, Base64 preview data, or ephemeral local server storage for permanent production images.
+
+### Security Requirements
+
+- Validate file extensions.
+- Validate actual MIME types and file signatures.
+- Set a reasonable upload size limit.
+- Sanitize filenames.
+- Generate safe unique storage filenames.
+- Reject unsupported or potentially dangerous files.
+- Enforce authentication and admin authorization.
+- Prevent unauthorized uploads.
+- Protect upload endpoints.
+- Handle storage errors properly.
+- Avoid exposing storage credentials.
+- Avoid creating orphaned files unnecessarily.
+
+If an image is replaced or removed, clean up old storage objects only when ownership and usage have been verified.
+
+Never remove images that are still referenced by other records.
+
+## F. Image Upload Testing
+
+Test actual file uploads using an isolated test environment.
+
+Verify:
+
+1. Click Upload Image.
+2. File Explorer opens.
+3. Select a valid image.
+4. The selected image uploads.
+5. A valid image reference is returned.
+6. The image is attached to the correct form field.
+7. Save the corresponding record.
+8. Verify the database record.
+9. Refresh the page.
+10. Verify the uploaded image still appears.
+11. Open the image in the frontend.
+12. Replace the image and verify the replacement.
+13. Test invalid file types.
+14. Test oversized files.
+15. Test upload failure and retry.
+
+A frontend preview does not count as a successful permanent upload.
+
+---
+
+# TASK 02 — FIX PROJECT MENU / LIVE VIEW / EXAMPLE DOMAIN ERROR
+
+## Observed Existing Problem
+
+In the existing application, when I navigate to the Project Menu and open the View or Live Project section, I can see the existing project interface.
+
+However, when I click certain card-like elements, I receive an unexpected error page containing the following message:
+
+"This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes."
+
+The page also contains translations of the same message in multiple languages and a link to:
+
+https://iana.org/help/example-domains
+
+This behavior is unexpected and should not happen in the real application.
+
+## A. Find the Actual Root Cause
+
+Do not simply hide the error.
+
+Inspect the complete click flow.
+
+Investigate:
+
+- The actual clickable element.
+- Its href attribute.
+- The target URL.
+- Any redirect logic.
+- The associated API response.
+- Database records containing the URL.
+- Hardcoded placeholder URLs.
+- Mock project data.
+- Example domains.
+- Iframe source URLs.
+- Frontend configuration.
+- Backend-generated links.
+- Project preview routes.
+- Live project configuration.
+- Environment variables.
+
+Search the project for suspicious placeholder values, including:
+
+- example.com
+- example.org
+- example.net
+- placeholder URLs
+- IANA example-domain references
+- Test or documentation endpoints.
+
+Identify which actual URL or API response causes the displayed IANA message.
+
+Do not assume every occurrence of an example-domain string is a bug. Trace the specific affected card and its destination.
+
+## B. Repair the Actual Link and Navigation
+
+After discovering the root cause:
+
+1. Identify the correct destination for each affected card.
+2. Replace incorrect placeholder destinations with the application's real configured route or actual project URL.
+3. Ensure links point to valid resources.
+4. Correct broken route definitions.
+5. Fix incorrect click handlers.
+6. Fix invalid redirects.
+7. Verify any iframe or preview integration.
+8. Ensure the card's entire intended clickable area works correctly.
+9. Preserve existing card design and behavior.
+
+Do not redirect users randomly to unrelated websites.
+
+Do not use another documentation domain as a replacement.
+
+If the application is supposed to open its own project page, use the correct internal route.
+
+If it is supposed to open an external live deployment, use the actual configured deployment URL.
+
+If the real destination or external credentials are missing, clearly report the missing configuration and display a proper branded fallback instead of an IANA error page.
+
+## C. Verify All Other Clickable Cards
+
+Inspect other similar cards and clickable elements to identify the same class of issue.
+
+Check:
+
+- Invalid links.
+- Empty links.
+- Incorrect routes.
+- Placeholder destinations.
+- Broken external URLs.
+- Incorrect target attributes.
+- Invalid preview sources.
+- Unhandled click events.
+
+Do not globally replace URLs without understanding their purpose.
+
+## D. Testing
+
+After fixing the bug:
+
+- Open the Project Menu.
+- Open the View section.
+- Open the Live Project.
+- Click every affected card.
+- Verify the correct destination.
+- Verify the URL.
+- Check browser console errors.
+- Check failed network requests.
+- Verify redirects.
+- Test the behavior after a hard refresh.
+
+The IANA documentation example page must no longer appear as an accidental destination for the affected application cards.
+
+---
+
+# TASK 03 — PREMIUM THREE-SECOND WEBSITE RELOAD ANIMATION
+
+## Objective
+
+I want a premium, visually impressive reload/loading animation when the user opens or reloads the website.
+
+The animation must match the website's existing visual identity.
+
+It should feel like an authentic premium website experience, not a generic loading spinner.
+
+## A. Design Discovery
+
+Before implementing the animation, inspect the existing homepage.
+
+Study:
+
+- Brand colors.
+- Background colors.
+- Typography.
+- Logo.
+- Existing animations.
+- Button styles.
+- Existing visual effects.
+- Overall visual identity.
+
+Use these existing elements as the foundation of the reload animation.
+
+Do not create a visually unrelated loading screen.
+
+## B. Animation Requirements
+
+Create a beautiful premium application startup/reload animation.
+
+Expected visual quality:
+
+- Smooth animation.
+- Elegant transitions.
+- Premium visual effects.
+- Modern motion design.
+- Consistent brand colors.
+- Carefully balanced composition.
+- Professional typography.
+- Smooth entrance and exit.
+- No visual glitches.
+
+The animation may incorporate appropriate elements such as:
+
+- Brand logo animation.
+- Elegant background movement.
+- Subtle glowing effects.
+- Smooth particle movement.
+- Animated progress indicator.
+- Premium opacity transitions.
+- Carefully designed loading typography.
+
+Choose the design according to the existing homepage.
+
+Do not use all effects unnecessarily.
+
+The result should look premium and professional.
+
+## C. Exact Timing
+
+The intended visible animation duration is approximately 3 seconds.
+
+Target duration: 3000 milliseconds.
+
+On a browser hard reload or supported initial application load:
+
+1. Display the branded loading animation.
+2. Start the animation smoothly.
+3. Continue the designed motion for approximately 3 seconds.
+4. Transition smoothly into the actual website.
+5. Display the existing homepage without changing its design.
+
+Do not show this loading animation on every ordinary internal SPA route navigation.
+
+Do not create reload loops.
+
+Do not repeatedly refresh the page to trigger the animation.
+
+Do not block network requests unnecessarily.
+
+If the application is still loading after the three-second animation, continue using the existing or an appropriate loading state until the content is ready. Never reveal a broken or incomplete page just to satisfy the animation timer.
+
+IMPORTANT TECHNICAL LIMITATION:
+
+You cannot control the browser's native reload process before the application starts executing. Implement this as an application-level startup overlay that becomes visible when the application loads after a browser refresh.
+
+## D. Performance & Accessibility
+
+- Use efficient CSS, SVG, or Canvas where appropriate.
+- Avoid unnecessary heavy JavaScript.
+- Avoid excessive GPU usage.
+- Support mobile devices.
+- Avoid layout shifts.
+- Respect prefers-reduced-motion.
+- Ensure the animation does not permanently block interaction.
+- Clean up timers, listeners, and animation resources.
+- Ensure no animation plays indefinitely.
+
+The real application must remain fully functional after the animation ends.
+
+## E. Reload Animation Verification
+
+Test:
+
+- Initial page load.
+- Browser hard refresh.
+- Browser normal refresh.
+- Direct URL navigation.
+- Internal route navigation.
+- Mobile viewport.
+- Slow network conditions.
+- Reduced-motion preference.
+
+Ensure the animation behaves consistently without breaking routing, session state, authentication, or data loading.
+
+---
+
+# TASK 04 — COMPLETE PRODUCTION-LEVEL MESSAGE SYSTEM
+
+## Objective
+
+My website has a Message System and a Contact Form.
+
+I want the entire message system to work correctly across the frontend, backend, database, and Admin Panel.
+
+The most important condition:
+
+**Messages must be processed and saved by the real backend and database. Frontend-only state updates are not acceptable.**
+
+The system must be reliable and production-ready.
+
+## A. Inspect the Existing Message Architecture
+
+Before modifying anything, inspect:
+
+- Contact page.
+- Contact form component.
+- Message form validation.
+- Frontend submission handler.
+- Backend message API.
+- Message database model.
+- Existing database table.
+- Admin message management.
+- Message list.
+- Message details.
+- Read/unread status.
+- Existing message reply functionality, if available.
+- Existing notifications.
+- Error handling.
+
+Understand the complete message submission lifecycle.
+
+Do not create duplicate APIs, tables, or message modules unnecessarily.
+
+## B. Correct Contact Form Submission Flow
+
+The expected flow:
+
+USER CONTACT FORM
+→ INPUT VALIDATION
+→ FRONTEND SUBMISSION
+→ BACKEND API
+→ SERVER-SIDE VALIDATION
+→ DATABASE INSERT
+→ DATABASE COMMIT
+→ VERIFIED SUCCESS RESPONSE
+→ FRONTEND SUCCESS STATE
+→ THREE-SECOND CANVAS CELEBRATION EFFECT
+
+Every step must function properly.
+
+## C. Frontend Form Functionality
+
+Verify all existing contact form fields.
+
+Examples:
+
+- Name.
+- Email.
+- Subject.
+- Message.
+- Other existing fields.
+
+Implement or repair:
+
+- Required field validation.
+- Email validation.
+- Input length validation.
+- Message length validation.
+- Appropriate input sanitization.
+- Submit button loading state.
+- Duplicate submission prevention.
+- Clear error messages.
+- Success feedback.
+- Network failure handling.
+
+Preserve the current contact form appearance.
+
+Do not redesign the entire Contact Page.
+
+## D. Backend Message Processing
+
+The message must actually be received and processed by the backend.
+
+Implement or repair the existing message endpoint.
+
+Requirements:
+
+- Correct HTTP method.
+- Request validation.
+- Server-side input validation.
+- Authentication rules appropriate to the existing public contact form.
+- Safe error handling.
+- Database insertion.
+- Correct response status.
+- Duplicate submission protection where appropriate.
+- Spam and abuse protection.
+- Rate limiting where supported.
+- No sensitive internal error exposure.
+
+The public contact form should not require an admin login unless the existing application has a valid security requirement for it.
+
+A successful frontend button click is not evidence of successful message delivery.
+
+## E. Real Database Persistence
+
+This is mandatory.
+
+Save contact messages into the actual existing database.
+
+Use the existing database and schema whenever possible.
+
+If a required database field or model is missing, implement the smallest safe, backward-compatible change.
+
+Verify:
+
+- Message ID.
+- Sender information.
+- Message content.
+- Submission time.
+- Existing status fields.
+- Correct database relationships, where applicable.
+
+Do not store messages only in frontend state, localStorage, sessionStorage, or temporary arrays.
+
+After submission, verify the actual database record.
+
+Refresh the website and verify that the message is still persisted.
+
+## F. Admin Panel Message Management
+
+Inspect and repair the existing Admin Panel message management system.
+
+Administrators should be able to use the existing message interface correctly.
+
+Verify available functionality:
+
+- View received messages.
+- Open message details.
+- Read sender information.
+- Read message content.
+- View submission dates.
+- Search messages.
+- Filter messages.
+- View unread messages.
+- Mark messages as read.
+- Update message status.
+- Delete messages, if supported.
+- Reply to messages, if existing functionality supports replies.
+
+If the project already has an inbox, preserve and repair it.
+
+If an inbox is necessary for the existing message workflow but is genuinely missing, implement only a minimal inbox using the existing admin design system.
+
+Do not introduce unnecessary messaging features.
+
+Ensure that administrative actions are processed by the backend and persisted in the database.
+
+## G. THREE-SECOND PREMIUM CANVAS SUCCESS EFFECT
+
+This is a special visual requirement.
+
+After the Contact Form message is successfully submitted and the backend confirms that the message has been saved to the database, display a premium three-second Canvas-based celebration effect.
+
+IMPORTANT:
+
+The Canvas Effect must ONLY trigger after genuine backend success.
+
+Never trigger it:
+
+- Before the API response.
+- On invalid form submission.
+- On network failure.
+- On a failed database insertion.
+- On an unsuccessful HTTP response.
+
+### Canvas Animation Design
+
+Create an impressive premium success celebration.
+
+The animation should last approximately 3000 milliseconds.
+
+Suggested visual elements:
+
+- Elegant canvas particle animation.
+- Beautiful particle burst.
+- Smooth colorful particle movement using existing brand colors.
+- Sophisticated wave or ripple effects.
+- Subtle glowing particles.
+- Premium animated confirmation symbol.
+- Smooth fade-in and fade-out.
+- Professional success typography.
+- Responsive composition.
+
+Suggested success message:
+
+"Message Sent Successfully!"
+
+Supporting text:
+
+"Thank you for contacting us. Your message has been received."
+
+The visual effect must look elegant, professional, and high-quality.
+
+Do not use an excessively distracting or cartoonish style.
+
+Use the existing homepage color palette and visual identity.
+
+### Animation Behavior
+
+1. User submits the contact form.
+2. Submit button enters loading state.
+3. Backend receives the request.
+4. Backend validates the request.
+5. Backend successfully saves the message.
+6. Backend returns a verified success response.
+7. Frontend displays the success state.
+8. Canvas celebration starts.
+9. The animation continues for approximately 3 seconds.
+10. The canvas animation stops and cleans up its resources.
+11. The success message remains visible or transitions to the form's normal success state.
+12. The application returns to normal interaction.
+
+Do not clear the submitted content or allow duplicate submissions while the request is processing.
+
+Respect reduced-motion accessibility settings with a simpler success transition.
+
+### Canvas Performance
+
+- Use requestAnimationFrame where appropriate.
+- Correctly size the canvas.
+- Account for device pixel ratio.
+- Avoid unnecessary rendering after completion.
+- Cancel animation frames.
+- Remove event listeners.
+- Clean up resources.
+- Prevent memory leaks.
+- Support mobile devices.
+
+Do not unnecessarily install a large animation library if native Canvas or an existing library can achieve the result.
+
+## H. Message System Testing
+
+Perform complete end-to-end testing.
+
+TEST 1 — SUCCESSFUL SUBMISSION
+
+1. Open the Contact Page.
+2. Enter valid information.
+3. Submit the form.
+4. Verify the backend request.
+5. Verify the successful database insertion.
+6. Verify the success API response.
+7. Verify the Canvas Effect starts only after success.
+8. Verify the animation lasts approximately three seconds.
+9. Verify the success message.
+
+TEST 2 — INVALID DATA
+
+1. Submit an empty form.
+2. Submit an invalid email.
+3. Submit an invalid message.
+4. Verify validation errors.
+5. Verify no invalid message is inserted into the database.
+6. Verify the Canvas Effect does not appear.
+
+TEST 3 — BACKEND FAILURE
+
+1. Simulate a backend failure in an isolated test environment.
+2. Submit a valid message.
+3. Verify the error state.
+4. Verify no false success notification.
+5. Verify no Canvas Effect.
+6. Verify that the user can retry safely.
+
+TEST 4 — DATA PERSISTENCE
+
+1. Submit a valid message.
+2. Verify its database record.
+3. Refresh the application.
+4. Open the Admin Panel.
+5. Find the submitted message.
+6. Open the message details.
+7. Verify every field.
+8. Test status changes where supported.
+9. Verify database updates.
+
+TEST 5 — ADMIN SECURITY
+
+1. Access the message management interface as an authorized admin.
+2. Verify permitted message operations.
+3. Attempt unauthorized access using a normal test user.
+4. Verify backend authorization.
+5. Confirm sensitive administrative information is protected.
+
+---
+
+# GLOBAL REGRESSION TESTING
+
+After completing all four tasks, test the rest of the existing application for unintended side effects.
+
+Specifically inspect:
+
+- Homepage.
+- Product pages.
+- Product details.
+- Product images.
+- Categories.
+- Cart.
+- Checkout.
+- Order success page.
+- User account.
+- Wishlist.
+- Contact Page.
+- Admin dashboard.
+- Product management.
+- Category management.
+- Order management.
+- User management.
+- Existing message management.
+- Existing navigation.
+- Existing responsive layouts.
+
+Only test existing modules; do not create new unrelated features.
+
+Ensure that the requested modifications do not break other working functionality.
+
+---
+
+# PRODUCTION SECURITY & QUALITY REQUIREMENTS
+
+Check:
+
+1. No frontend-only fake persistence.
+2. No hardcoded secrets.
+3. No unauthorized admin operations.
+4. No exposed private configuration.
+5. No unsafe upload endpoint.
+6. No broken image storage references.
+7. No accidental example-domain redirects.
+8. No duplicate message submissions.
+9. No failed database transactions treated as success.
+10. No memory leaks in Canvas animations.
+11. No infinite reload animations.
+12. No broken routes.
+13. No unnecessary console errors.
+14. No unintended design changes.
+15. No production data destruction.
+
+Use the available testing infrastructure and a separate test database.
+
+Never run destructive tests on real production records.
+
+---
+
+# FINAL EXECUTION INSTRUCTIONS
+
+You must work directly on the existing project.
+
+Follow this order:
+
+PHASE 1: Inspect and understand the complete existing project.
+
+PHASE 2: Identify existing image upload infrastructure and implement the File Explorer upload system.
+
+PHASE 3: Investigate and fix the Project Menu / Live View IANA example-domain issue.
+
+PHASE 4: Implement the branded three-second startup/reload animation.
+
+PHASE 5: Audit and repair the complete frontend-to-backend Message System.
+
+PHASE 6: Implement the three-second Canvas success effect after verified message persistence.
+
+PHASE 7: Test all four requested areas.
+
+PHASE 8: Run complete regression tests.
+
+PHASE 9: Run lint, type checking, automated tests, and production build.
+
+PHASE 10: Report the actual results and remaining limitations.
+
+Do not stop after analyzing the code.
+
+Implement all safe, necessary, verified changes.
+
+Save the modified files in the existing project.
+
+If a production service, database, cloud storage credential, deployment URL, or external integration is unavailable, implement what can be safely implemented and clearly identify the remaining configuration requirement.
+
+Never invent a successful test result.
+
+---
+
+# FINAL REPORT FORMAT
+
+After finishing, provide a detailed report.
+
+## 1. Image Upload System
+
+- All image fields inspected.
+- File Explorer integration status.
+- Upload API status.
+- Storage integration.
+- Image preview status.
+- Database persistence status.
+- Security validation.
+- Upload test results.
+
+## 2. Live Project Bug Fix
+
+- Actual root cause of the IANA error.
+- Affected URLs or components.
+- Files modified.
+- Fix implemented.
+- Click and navigation test results.
+
+## 3. Reload Animation
+
+- Animation implementation.
+- Duration.
+- Design consistency.
+- Desktop and mobile behavior.
+- Reduced-motion handling.
+- Reload verification.
+
+## 4. Message System
+
+- Contact form status.
+- Backend API status.
+- Database insertion status.
+- Admin inbox status.
+- Message management status.
+- Authentication and authorization.
+- Error handling.
+- Persistence test results.
+
+## 5. Canvas Success Effect
+
+- Trigger condition.
+- Backend confirmation verification.
+- Animation duration.
+- Canvas performance.
+- Error-state behavior.
+- Reduced-motion behavior.
+
+## 6. Testing Report
+
+Use this table:
+
+| Test Area | Result | Details |
+|---|---|---|
+| File Explorer | PASS/FAIL/BLOCKED | Actual result |
+| Image Upload | PASS/FAIL/BLOCKED | Actual result |
+| Image Database Persistence | PASS/FAIL/BLOCKED | Actual result |
+| Live Project Navigation | PASS/FAIL/BLOCKED | Actual result |
+| Reload Animation | PASS/FAIL/BLOCKED | Actual result |
+| Contact Form | PASS/FAIL/BLOCKED | Actual result |
+| Backend Message API | PASS/FAIL/BLOCKED | Actual result |
+| Message Database Persistence | PASS/FAIL/BLOCKED | Actual result |
+| Admin Message Management | PASS/FAIL/BLOCKED | Actual result |
+| Canvas Success Effect | PASS/FAIL/BLOCKED | Actual result |
+| Regression Testing | PASS/FAIL/BLOCKED | Actual result |
+| Production Build | PASS/FAIL/BLOCKED | Actual result |
+
+## 7. Modified Files
+
+List every modified, created, or deleted file and the reason for the change.
+
+Mention any database migration and its safety.
+
+## 8. Remaining Issues
+
+Disclose:
+
+- Missing API credentials.
+- Missing storage configuration.
+- External service limitations.
+- Unavailable infrastructure.
+- Failed tests.
+- Unverified functionality.
+
+## 9. Final Status
+
+Select one:
+
+- PRODUCTION READY
+- CONDITIONALLY READY
+- NOT PRODUCTION READY
+
+Explain the actual reason.
+
+---
+
+# FINAL COMMAND
+
+Begin by carefully inspecting my EXISTING PROJECT.
+
+Your four main objectives are:
+
+1. Build a real File Explorer-based image upload system in the existing Admin Panel.
+2. Find and permanently fix the actual cause of the Project Menu / Live View IANA example-domain error.
+3. Implement a visually premium, approximately three-second branded website startup/reload animation.
+4. Make the complete Message System production-ready, with genuine backend/database persistence and a premium three-second Canvas success effect that only appears after confirmed successful message storage.
+
+**PRESERVE THE EXISTING WEBSITE DESIGN. PRESERVE WORKING FEATURES. DO NOT REBUILD THE PROJECT. DO NOT FAKE BACKEND FUNCTIONALITY. DO NOT DESTROY DATA. DO NOT INTRODUCE UNNECESSARY CHANGES.**
+
+Make targeted improvements, implement them directly, test them properly, and provide evidence-based results.
+
+The final product must remain the same existing website, with its original visual identity, but with these four areas functioning reliably at professional production standards.
